@@ -1,0 +1,18 @@
+
+body {
+    color: #081B50;
+}
+
+
+#myndTitle {
+    font-family: 'Futura PT';
+    font-size: 10em;
+    text-align: center;
+    margin-top: 13%;
+    font-weight: 400;
+}
+
+#slider {
+    margin: 0 auto 0 auto;
+    transition-timing-function: frames(100);
+}

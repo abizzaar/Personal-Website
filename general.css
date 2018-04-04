@@ -1,0 +1,206 @@
+
+
+body {
+  font-family: 'Neutraface 2 Text';
+  font-size: 140%;
+}
+
+.headingsFutura {
+  font-family: 'Futura PT';
+}
+
+#abizarNav {
+  position: fixed;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  font-size: 1.5em;
+  font-weight: 300;
+  top: 0;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#abizarNav:hover {
+  opacity: 1;
+}
+
+p {
+  font-family: 'Neutraface 2 Text';
+  font-weight: 200;
+  line-height: 180%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Futura PT';
+}
+  /* 
+  FUTURA PT 
+  */
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTBold.otf') format('opentype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTBoldOblique.otf') format('opentype');
+    font-weight: 700;
+    font-style: oblique;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTBook.otf') format('opentype');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTBookOblique.otf') format('opentype');
+    font-weight: 300;
+    font-style: oblique;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTDemi.otf') format('opentype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTDemiOblique.otf') format('opentype');
+    font-weight: 500;
+    font-style: oblique;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTExtraBold.otf') format('opentype');
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTExtraBoldOblique.otf') format('opentype');
+    font-weight: 800;
+    font-style: oblique;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTHeavy.otf') format('opentype');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTHeavyOblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTLight.otf') format('opentype');
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTLightOblique.otf') format('opentype');
+    font-weight: 200;
+    font-style: oblique;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTMedium.otf') format('opentype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPTMediumOblique.otf') format('opentype');
+    font-weight: 400;
+    font-style: oblique;
+  }
+
+/*
+    NEUTRAFACE 2 TEXT
+*/
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-Book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-BookItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-Demi.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-DemiItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Neutraface 2 Text';
+    src: url('fonts/Neutraface2Text-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+    src: url('fonts/MyriadPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+

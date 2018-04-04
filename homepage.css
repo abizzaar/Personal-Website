@@ -1,0 +1,111 @@
+
+
+
+
+
+#abizarCoverPhoto {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#titleDescrOfMe {
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#descrOfMe {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.email {
+    margin-top: 1%;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.resume {
+    text-align: right;
+    margin-right: 20%;
+}
+
+.homePageUnderline {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.homePageUnderline:hover {
+    opacity: 0.5;
+}
+
+
+#myWorkTitle {
+    margin-left: 20%;
+}
+
+#myWorkDescr1 {
+    margin-left: 20%;
+}
+
+#myWorkDescr2 {
+    margin-left: 20%;
+    margin-top: 0.4%;
+}
+
+.homePageEmphasis {
+    font-weight: 300;
+}
+
+#keepCheckingBack {
+    margin-top: 4%;
+    text-align: right;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+#personalMediaIcons {
+    margin-top: 1%;
+    text-align: right;
+    margin-right: 20%;
+    vertical-align: baseline;
+}
+
+#linkedInText {
+    font-size: 1em;
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+#linkedInText:hover {
+    opacity: 1;
+}
+
+#githubIcon {
+    margin-left: 0.5%;
+    height: 0.9em;
+    vertical-align: -0.15em;
+    opacity: 0.6;
+    cursor:pointer;
+}
+
+#githubIcon:hover {
+    opacity: 1;
+}
+
+#behanceIcon {
+    margin-left: 0.5%;
+    height: 0.9em;
+    vertical-align: -0.15em;
+    opacity: 0.6;
+    cursor:pointer;
+}
+
+#behanceIcon:hover {
+    opacity: 1;
+}
