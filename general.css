@@ -36,8 +36,37 @@ h1 {
   font-weight: 300;
   font-family: 'Futura PT';
 }
-  /* 
-  FUTURA PT 
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Futura PT';
+  margin: 0 0 0 0;
+}
+
+.descrProjectLeft {
+  box-sizing: border-box;
+  padding-right: 3%;
+  padding-left: 10%;
+  float: left;
+  width: 40%;
+  text-align: right;
+}
+
+.descrProjectRight {
+  box-sizing: border-box;
+  float: right;
+  width: 60%;
+  padding-right: 20%;
+}
+
+.descrRowContainer {
+  display: flex;
+  margin-top: 2%;
+}
+
+  /*
+  FUTURA PT
   */
 
   @font-face {
@@ -71,7 +100,7 @@ h1 {
     src: url('fonts/FuturaPTDemi.otf') format('opentype');
     font-weight: 500;
   }
-  
+
   @font-face {
     font-family: 'Futura PT';
     src: url('fonts/FuturaPTDemiOblique.otf') format('opentype');
@@ -137,7 +166,7 @@ h1 {
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Light.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-Light.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
 }
@@ -145,7 +174,7 @@ h1 {
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-LightItalic.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-LightItalic.otf') format('opentype');
     font-weight: 200;
     font-style: italic;
 }
@@ -153,14 +182,14 @@ h1 {
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Book.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-Book.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-BookItalic.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-BookItalic.otf') format('opentype');
     font-weight: 300;
     font-style: italic;
 }
@@ -176,14 +205,14 @@ h1 {
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-DemiItalic.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-DemiItalic.otf') format('opentype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Bold.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -192,7 +221,7 @@ h1 {
 
 @font-face {
     font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-BoldItalic.ttf') format('truetype');
+    src: url('fonts/Neutraface2Text-BoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
 }
@@ -204,3 +233,18 @@ h1 {
     font-style: normal;
 }
 
+/* ROBOTO */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}

@@ -25,17 +25,19 @@
     margin-top: 1%;
     text-align: right;
     margin-right: 20%;
+    margin-left: 20%;
 }
 
 .resume {
     text-align: right;
     margin-right: 20%;
+    margin-left: 20%;
 }
 
 .homePageUnderline {
     text-decoration: underline;
     cursor: pointer;
-    
+
 }
 
 .homePageUnderline:hover {
@@ -45,19 +47,22 @@
 
 #myWorkTitle {
     margin-left: 20%;
+    margin-right: 20%;
 }
 
 #myWorkDescr1 {
     margin-left: 20%;
+    margin-right: 20%;
 }
 
 #myWorkDescr2 {
     margin-left: 20%;
     margin-top: 0.4%;
+    margin-right: 20%;
 }
 
 .homePageEmphasis {
-    font-weight: 300;
+  
 }
 
 #keepCheckingBack {
@@ -65,6 +70,7 @@
     text-align: right;
     margin-right: 20%;
     margin-bottom: 5%;
+    margin-left: 20%;
 }
 
 #personalMediaIcons {
