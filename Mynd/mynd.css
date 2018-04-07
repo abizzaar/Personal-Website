@@ -1,26 +1,28 @@
 
 body {
     color: #081B50;
-}
-
-p {
-
+    font-family: 'Neutraface 2 Text';
+    font-weight: 200;
 }
 
 
 #myndTitle {
-    font-family: 'Futura PT';
-    font-size: 10em;
-    text-align: center;
-    margin-top: 13%;
-    font-weight: 400;
+  position: relative;
+  font-family: 'Futura PT';
+  font-size: 10em;
+  text-align: center;
+  margin-top: 10%;
+  font-weight: 400;
+  margin-bottom: -8%;
+  z-index: 2;
 }
 
-
-#slider {
-    margin: 0 auto 0 auto;
-    transition-timing-function: frames(100);
+#gif {
+  width: 50%;
+  display: block;
+  margin: 0 auto 10% auto;
 }
+
 
 .blueUnderline {
   padding-left: 0.2em;
@@ -30,12 +32,6 @@ p {
   background-repeat: repeat-x;
 }
 
-.bulletPoint {
-  height: 1em;
-  width: 1em;
-  background-color: #DDEEF4;
-  border-radius: 50%;
-}
 
 #robotoFont {
   display: block;
@@ -46,27 +42,144 @@ p {
 
 .colorBlock {
   display: inline-block;
-}
-
-.colorDot {
-
+  text-align: center;
+  margin-top: 0.5em;
 }
 
 
 #leftColorDot {
-
   height: 3em;
   width: 3em;
-  background-color: #DDEEF4;
+  background-color: #081B50;
   border-radius: 50%;
+  margin: auto;
 }
 
 #rightColorDot {
   display: inline-block;
-  margin-left: 1em;
-  margin-top: 0.5em;
   height: 3em;
   width: 3em;
   background-color: #DDEEF4;
   border-radius: 50%;
+  margin: auto;
 }
+
+.colorDotCode {
+  font-family: 'Iosevka';
+  font-weight: 100;
+  font-size: 0.6em;
+  margin: 0.4em auto 0 auto;
+}
+
+
+#rightColorBlock {
+  margin-left: 1em;
+}
+
+#interactivePrototype {
+  margin-top: 6%;
+  text-align: center;
+}
+
+#iphoneContainer {
+  margin: 2% auto 6% auto; 
+  position:relative; 
+  width: 18em; 
+  height: 35.617em;
+}
+
+
+#iphone {
+  position:absolute; 
+  left:0; 
+  top:0; 
+  width:100%; 
+  height:100%;
+  z-index: 2;
+}
+
+#iframeContainerMynd {
+  position: absolute;
+  top: 4.8em;
+  left: 1.4em;
+  width: 14.9em; 
+  height: 26.5em;
+  z-index: 4;
+}
+
+
+#iframeMynd {
+  position:absolute; 
+  left:0; 
+  top:0; 
+  width:100%; 
+  height:100%;
+  z-index: 3;
+}
+
+#processImageMynd {
+  display: block;
+  float: left;
+  width: 10em;
+}
+
+#textNearProcessMynd {
+  vertical-align: top;
+  overflow-x: hidden;
+  padding-left: 0.8em;
+}
+
+#containerProcessMynd {
+  align-content: top;
+}
+
+#processVideo {
+  margin-top: 1em;
+  padding-left: 0.2em;
+  display: block;
+  width: 80%;
+}
+
+#videoAndDescrMyndContainer {
+  display: flex;
+}
+
+#videoMyndUI1 {
+  display: block;
+  width: 14em;
+  float: right;
+}
+
+.textRightOfVideo {
+  margin-top: 1em;
+}
+
+.bulletPointContainer {
+  padding-top: 1em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bpAndHeading {
+  padding-top: 0.2em;
+  display: flex;
+  align-items: center;
+}
+
+.bulletPoint {
+  height: 0.8em;
+  width: 0.8em;
+  background-color: #DDEEF4;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.headingInBulletPointContainer {
+  padding-left: 0.5em;
+
+}
+
+.textInBulletPointContainer {
+  padding-left: 2em;
+}
+
