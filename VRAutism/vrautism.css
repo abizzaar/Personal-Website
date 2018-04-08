@@ -1,0 +1,92 @@
+
+
+body {
+    margin: 0 0 0 0;
+    color: #BABABA;
+    background: black; /* For browsers that do not support gradients */
+    background: repeating-linear-gradient(black, #212121, black, #212121,black, #212121, black, #212121);
+}
+
+#decorateChair {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+.yellowText {
+    color: #F8ED3A;
+}
+
+#weDesignedAVRExperience {
+    border-left: 0;
+    padding-bottom: 5%;
+}
+
+.descrRowContainer {
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
+.descrProjectLeft, .descrProjectRight {
+    padding-bottom: 2%;
+}
+
+.descrProjectLeft {
+    padding-top: 0.1%;
+}
+
+.descrProjectRight {
+    border-left: 1px solid #696969;
+    padding-left: 3%;
+    box-sizing: border-box;
+}
+
+#therapyOSContainer {
+}
+
+#therapyOSLogo {
+    padding-right: 0.5em;
+    width: 7em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#therapyOSDescr {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lastDescrVR {
+    padding-bottom: 0;
+}
+
+#ourUserContainerVR {
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+#becauseAutismHasSuch {
+    margin-top: 1%;
+    margin-right: 50%;
+    margin-bottom: 3%;
+}
+
+.bulletPointAndStatementVR {
+    margin-top: 1%;
+}
+
+.bulletPointVR {
+    display: inline-block;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #BABABA;
+    transform: rotate(45deg);
+    vertical-align: middle;
+}
+
+.statementVR {
+    padding-left: 0.9em;
+    display: inline-block;
+    vertical-align: middle;
+}
