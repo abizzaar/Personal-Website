@@ -3,6 +3,10 @@
 body {
   font-family: 'Neutraface 2 Text';
   font-size: 125%;
+  text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+  -moz-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
 }
 
 .headingsFutura {
