@@ -5,6 +5,7 @@ body {
     color: #BABABA;
     background: black; /* For browsers that do not support gradients */
     background: repeating-linear-gradient(black, #212121, black, #212121,black, #212121, black, #212121);
+    margin-bottom: 5%;
 }
 
 #decorateChair {
@@ -34,6 +35,7 @@ body {
 
 .descrProjectLeft {
     padding-top: 0.1%;
+    text-align: right;
 }
 
 .descrProjectRight {
@@ -71,7 +73,7 @@ body {
     position: relative;
     z-index: 1;
     display: inline-block;
-    width: 50%;   
+    width: 55%;   
     vertical-align: middle;
 }
 
@@ -107,7 +109,7 @@ body {
     position: relative;
     z-index: 0;
     margin-left: -10%;
-    width: 25%;
+    width: 24%;
     display: inline-block;
     vertical-align: top;
 }
@@ -115,7 +117,7 @@ body {
 #processContainer {
     margin-top: 5%;
     margin-left: 25%;
-    margin-right: 30%;
+    width: 50%;
 }
 
 #processDiagramVR {
@@ -129,7 +131,7 @@ body {
     margin-left: 0.3%;
     margin-bottom: 1.5em;
     display: flex;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .eachProcessWord {
@@ -137,10 +139,120 @@ body {
     margin-right: 1.5%;
     display: block;
     line-height: 100%;
+    font-size: 0.8em;
 }
 
 
 #ethanVRVideo {
     width: 100%;
     margin-top: 2em;
+}
+
+#ourPrototypeContainerVR {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+#ourPrototypeHeadingVR {
+    margin-bottom: 0.5em;
+}
+
+#ourPrototypeDiagram {
+    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.ourPrototypeBlock {
+    width: 27%;
+    margin-right: 6.8%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ourPrototypeBlockHeading {
+    font-weight: 300;
+    margin-bottom: 0.3em;
+}
+
+.ourPrototypeBlockImage {
+    width: 70%;
+    margin-top: 0.7em;
+}
+
+#lastPrototypeBlock {
+    margin-right: 0;
+}
+
+.environmentHeadings {
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    word-wrap: break-word;
+}
+
+.environmentQuestions {
+   padding-bottom: 0.1em;
+   
+}
+
+#firstEnvQ {
+
+}
+
+#secondEnvQ {
+    padding-top: 1em;
+}
+
+
+.envLeft, .envRight {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 7%;
+}
+
+.fullSizeVideoBlockVR {
+    padding-top: 5%;
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.fullSizeVideo {
+    width: 100%;
+}
+
+.captionOfVideo {
+    font-style: italic;
+    text-align: center;
+    padding-top: 0.5em;
+    color: #9A9A9A;
+}
+
+.halfSizeMediaContainer {
+    padding-top: 5%;
+    vertical-align: middle;
+}
+
+.halfSizeMediaBlockLeft {
+    margin-left: 20%;
+    display: inline-block;
+    width: 27%;
+    vertical-align: top;
+}
+
+.halfSizeMediaBlockRight {
+    margin-left: 4%;
+    display: inline-block;
+    width: 28.5%;
+    vertical-align: top;
+}
+
+#finalPresentationBlock {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
 }
