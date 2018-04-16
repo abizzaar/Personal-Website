@@ -2,7 +2,6 @@
 
 
 
-
 #abizarCoverPhoto {
     width: 60%;
     display: block;
@@ -14,6 +13,7 @@
     margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 1%;
 }
 
 #descrOfMe {
@@ -22,10 +22,15 @@
 }
 
 .email {
-    margin-top: 1%;
+    margin-top: 2%;
     text-align: right;
     margin-right: 20%;
     margin-left: 20%;
+}
+
+#emailAbizar {
+    color: black;
+    text-decoration: none;
 }
 
 .resume {
@@ -35,9 +40,10 @@
 }
 
 .homePageUnderline {
-    text-decoration: underline;
     cursor: pointer;
-
+    background-image: linear-gradient(to right, black 100%, white 0);;
+    background-position: 0 0.95em;
+    background-repeat: repeat-x;
 }
 
 .homePageUnderline:hover {
@@ -46,6 +52,8 @@
 
 
 #myWorkTitle {
+    margin-top: 1%;
+    margin-bottom: 0.8%;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -74,7 +82,7 @@
 }
 
 #personalMediaIcons {
-    margin-top: 1%;
+    margin-top: 0.3%;
     text-align: right;
     margin-right: 20%;
     vertical-align: baseline;
@@ -115,3 +123,5 @@
 #behanceIcon:hover {
     opacity: 1;
 }
+
+
