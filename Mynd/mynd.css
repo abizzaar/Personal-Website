@@ -37,12 +37,23 @@ body {
 #interactivePrototype {
   margin-top: 4%;
   text-align: center;
+  font-size: 1.1em;
 }
 
+
+#iPhoneText {
+  padding-top: 0.2%;
+  font-size: 1.1em;
+  font: 'Neutraface 2 Text';
+  font-weight: 200;
+  font-style: italic;
+}
+
+
 #iphoneContainer {
-  margin: 1.5% auto 3% auto; 
+  margin: 1% auto 3% auto; 
   position:relative; 
-  width: 18em; 
+  width: 18em;
   height: 35.617em;
 }
 
@@ -74,6 +85,10 @@ body {
   height:100%;
   z-index: 3;
 }
+
+
+
+
 
 #processContainer {
   margin-bottom: 4%;
