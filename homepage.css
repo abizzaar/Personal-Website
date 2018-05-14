@@ -1,5 +1,8 @@
 
-
+*::selection {
+    background-color: black;
+    color: white;
+}
 
 
 #abizarCoverPhoto {
@@ -70,7 +73,7 @@
 }
 
 .homePageEmphasis {
-  
+  font-weight: 300;
 }
 
 #keepCheckingBack {
@@ -102,7 +105,7 @@
 
 #githubIcon {
     margin-left: 0.5%;
-    height: 0.9em;
+    height: 1em;
     vertical-align: -0.15em;
     opacity: 0.6;
     cursor:pointer;
@@ -114,7 +117,7 @@
 
 #behanceIcon {
     margin-left: 0.5%;
-    height: 0.9em;
+    height: 1em;
     vertical-align: -0.15em;
     opacity: 0.6;
     cursor:pointer;

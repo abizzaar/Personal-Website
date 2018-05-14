@@ -9,6 +9,11 @@ body {
     margin-bottom: 7%;
 }
 
+*::selection {
+    background-color: #F8ED3A;
+    color: black;
+}
+
 #decorateChairContainer {
     width: 100%;
     overflow:hidden;
@@ -169,14 +174,20 @@ body {
     margin-bottom: 0.5em;
 }
 
-#ourPrototypeDiagram {
-    width: 70%;
+#ourPrototypeDiagramContainer {
+    margin-left: -1.5%;
     margin-top: 2em;
     margin-bottom: 0.5em;
 }
 
+#ourPrototypeDiagram {
+    padding-left: 1.4%;
+    width: 70.5%;
+    
+}
+
 .ourPrototypeBlock {
-    width: 27%;
+    width: 27.5%;
     margin-right: 6.8%;
     display: inline-block;
     vertical-align: top;
