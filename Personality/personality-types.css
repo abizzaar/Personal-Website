@@ -1,0 +1,111 @@
+body {
+    margin-bottom: 7%;
+}
+
+#imgPersonalityBleed {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.descrRowContainer {
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+/* linear-gradient(
+      to right, 
+      #fffdc2,
+      #fffdc2 15%,
+      #d7f0a2 15%,
+      #d7f0a2 85%,
+      #fffdc2 85%
+    );*/
+
+
+/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
+.descrProjectLeft, .descrProjectRight {
+    padding-bottom: 2%;
+}
+
+.descrProjectLeft {
+    padding-top: 0.1%;
+    text-align: right;
+}
+
+.descrProjectRight {
+    border-left: 1px solid #E0E0E0;
+    padding-left: 3%;
+    box-sizing: border-box;
+}
+
+.lastDescrPers {
+    padding-bottom: 0;
+}
+
+.redBlueUnderline {
+    padding-left: 0.1em;
+     padding-right: 0.1em;
+   
+     
+     background-position: 0 1.15em;
+     background-repeat: repeat-x;
+ 
+     background-image: linear-gradient(
+         to bottom, 
+         #BC0000,
+         #BC0000 2px,
+         white 2px, 
+         white 4px
+       );
+       padding-bottom: 2px;
+       border-bottom: solid 2px #0F51D0;
+}
+
+.hyperlinkPers {
+    display: inline;
+    color: #0F51D0;
+}
+
+#resultsContainer {
+    width: 40%; 
+    margin: auto
+}
+#resultsHeading {
+    font-size: 1.8em;
+    margin-top: 12%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+#paragraphResultsOne {
+    margin-left: 0%;
+    text-align: center;
+}
+
+#imgTraining {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    
+}
+
+#paragraphResultsTwo {
+    text-align: center;
+    margin-top: 4%;
+}
+   
+#imgFeeling {
+    display: block;
+    width: 55%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+#imgThinking {
+    display: block;
+    width: 55%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
