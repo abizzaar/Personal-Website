@@ -6,10 +6,6 @@ body {
     margin-bottom: 5%;
 }
 
-*::selection {
-  background-color:  #DDEEF4;
-}
-
 #myndTitle {
   position: relative;
   font-family: 'Futura PT';

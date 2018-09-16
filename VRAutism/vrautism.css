@@ -2,16 +2,13 @@
 
 body {
     color: #BABABA;
-    background: black; /* For browsers that do not support gradients */
-    background: repeating-linear-gradient(black, #212121, black, #212121,black, 
-    #212121, black, #212121, black, #212121, black, #212121,
-    #212121, black, #212121, black, #212121, black, #212121);
+    background: black;
     margin-bottom: 7%;
 }
 
 *::selection {
-    background-color: #F8ED3A;
-    color: black;
+  background-color: rgba(255,255,255,0.8);
+  color: rgba(0,0,0,1);
 }
 
 #decorateChairContainer {
