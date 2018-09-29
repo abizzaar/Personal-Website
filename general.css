@@ -103,8 +103,8 @@ h4 {
 
 @media only screen and (max-width: 1120px) {
   .maxWidthContainer {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
