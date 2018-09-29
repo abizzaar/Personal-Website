@@ -1,7 +1,7 @@
 .greyUnderline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: linear-gradient(to right, rgba(0,0,0,0.06) 100%, white 0);;
+  background-image: linear-gradient(to right, #F0F0F0 100%, white 0);;
   background-position: 0 0.85em;
   background-repeat: repeat-x;
 }
@@ -162,6 +162,10 @@
 
   #personalMediaIcons {
     margin-bottom: 5rem;
+  }
+
+  #myWorkDescr1, #myWorkDescr2, #myWorkDescr3 {
+    margin-top: 2rem;
   }
 }
 
