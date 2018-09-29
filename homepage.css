@@ -1,26 +1,18 @@
 #abizarCoverPhoto {
-    width: 60%;
+    width: 100%;
     display: block;
-    margin: auto;
-    margin-top: 5%;
+    margin-top: 5rem;
 }
 
 #titleDescrOfMe {
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 1%;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-#descrOfMe {
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
 .email {
-    margin-top: 2%;
+    margin-top: 2rem;
     text-align: right;
-    margin-right: 20%;
     margin-left: 20%;
 }
 
@@ -31,7 +23,6 @@
 
 .resume {
     text-align: right;
-    margin-right: 20%;
     margin-left: 20%;
 }
 
@@ -48,27 +39,19 @@
 
 
 #myWorkTitle {
-    margin-top: 1%;
-    margin-bottom: 0.8%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #myWorkDescr1 {
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 #myWorkDescr2 {
-    margin-left: 20%;
-    margin-top: 0.4%;
-    margin-right: 20%;
+    margin-top: 0.5rem;
 }
 
 #myWorkDescr3 {
-    margin-left: 20%;
-    margin-top: 0.4%;
-    margin-right: 20%;
+  margin-top: 0.5rem;
 }
 
 .homePageEmphasis {
@@ -76,17 +59,14 @@
 }
 
 #keepCheckingBack {
-    margin-top: 4%;
+  margin-top: 3rem;
     text-align: right;
-    margin-right: 20%;
-    margin-bottom: 5%;
-    margin-left: 20%;
+    margin-bottom: 7rem;
 }
 
 #personalMediaIcons {
-    margin-top: 0.3%;
+    margin-top: 0.7rem;
     text-align: right;
-    margin-right: 20%;
     vertical-align: baseline;
 }
 
