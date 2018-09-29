@@ -74,6 +74,7 @@ h2 {
     width: 7em;
     display: inline-block;
     vertical-align: middle;
+    border: none;
 }
 
 #therapyOSDescr {
