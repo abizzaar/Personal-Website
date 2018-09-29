@@ -41,14 +41,15 @@ body {
 p {
   font-family: 'Neutraface 2 Text';
   font-weight: 200;
-  line-height: 170%;
+  line-height: 1.7;
   margin: 0;
   font-size: 100%;
 }
 
 h1 {
   font-size: 1.7em;
-  font-weight: 300;
+  font-weight: 400;
+  color: #4C4C4C; /*rgba(0,0,0,0.7); */
   font-family: 'Futura PT';
   margin: 0 0 0 0;
 }
