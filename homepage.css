@@ -13,7 +13,6 @@
 .email {
     margin-top: 2rem;
     text-align: right;
-    margin-left: 20%;
 }
 
 #emailAbizar {
@@ -23,7 +22,6 @@
 
 .resume {
     text-align: right;
-    margin-left: 20%;
 }
 
 .homePageUnderline {
@@ -60,8 +58,8 @@
 
 #keepCheckingBack {
   margin-top: 3rem;
-    text-align: right;
-    margin-bottom: 7rem;
+  text-align: right;
+  margin-bottom: 5rem;
 }
 
 #personalMediaIcons {
@@ -83,7 +81,7 @@
 }
 
 #githubIcon {
-    margin-left: 0.5%;
+    margin-left: 0.3rem;
     height: 1em;
     vertical-align: -0.15em;
     opacity: 0.6;
@@ -95,7 +93,7 @@
 }
 
 #behanceIcon {
-    margin-left: 0.5%;
+    margin-left: 0.3rem;
     height: 1em;
     vertical-align: -0.15em;
     opacity: 0.6;
@@ -106,4 +104,57 @@
     opacity: 1;
 }
 
+
+
+.maxWidthContainer {
+  max-width: 1020px;
+  margin: auto;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  #abizarNav {
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    width: 100%;
+    color: black;
+  }  
+}
+
+@media only screen and (max-width: 1120px) {
+  .maxWidthContainer {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  #abizarCoverPhoto {
+    width: calc(100% + 6rem);
+    margin-left: -3rem;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .maxWidthContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #abizarCoverPhoto {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+  }
+
+  .email, .resume, #personalMediaIcons, #keepCheckingBack {
+    text-align: left;
+  }
+
+  .email {
+    margin-top: 3rem;
+  }
+
+  #personalMediaIcons {
+    margin-bottom: 3rem;
+  }
+
+}
 

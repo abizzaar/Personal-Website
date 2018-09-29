@@ -15,12 +15,6 @@ body {
   color: white;
 }
 
-.maxWidthContainer {
-  max-width: 1020px;
-  margin: auto;
-}
-
-
 
 .headingsFutura {
   font-family: 'Futura PT';
@@ -100,23 +94,6 @@ h4 {
   display: flex;
   margin-top: 2%;
 }
-
-@media only screen and (max-width: 1120px) {
-  .maxWidthContainer {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  #abizarNav {
-    background: white;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    width: 100%;
-    color: black;
-  }  
-}
-
 /*
 FUTURA PT
 */
