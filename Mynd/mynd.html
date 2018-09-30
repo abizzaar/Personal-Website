@@ -1,21 +1,25 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../general.css" />
+    <link rel="stylesheet" type="text/css" href="slider/roundslider.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../Assets/general.css" />
     <link rel="stylesheet" type="text/css" href="mynd.css" />
+    <link rel="stylesheet" type="text/css" href="../Assets/responsive.css" />
+    <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1" />
 </head>
 
 <body>
-    <div id="abizarNav" class="headingsFutura" onclick="location.href = '../index.html'">
+    <div id="abizarNav" class="headingsFutura" onclick="location.href = '../Home/index.html'">
         Abizar
     </div>
 
-    <div id="myndTitle">
+    <span id="myndTitle">
         MYND
-    </div>
+    </span>
 
-    <img id="gif" src="Media/slider animation.gif">
+    <div id="slider" class="rslider"></div>
 
+    <div class="maxWidthContainer">
     <!-- first-->
     <div class="descrRowContainer">
       <h2 class="descrProjectLeft">
@@ -119,7 +123,7 @@
       
 
 
-    <div class="descrRowContainer">
+    <div id="colorContainer" class="descrRowContainer">
       <h2 id="colorTitle" class="descrProjectLeft">
         <span class="blueUnderline">COLORS</span>
       </h2>
@@ -145,7 +149,7 @@
 
     </div>
 
-    <div class="descrRowContainer">
+    <div id="typeContainer" class="descrRowContainer">
       <h2 id="typographyHeadingMynd" class="descrProjectLeft">
         <span  class="blueUnderline">TYPOGRAPHY</span>
       </h2>
@@ -256,10 +260,11 @@
   
         </div>
       </div>
-
+    </div>
     
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="slider/roundslider.min.js"></script>
     <script src="mynd.js"></script>
 </body>
 

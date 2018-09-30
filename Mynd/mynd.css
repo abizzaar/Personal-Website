@@ -1,26 +1,38 @@
 
 body {
-    color: #081B50;
-    font-family: 'Neutraface 2 Text';
-    font-weight: 200;
-    margin-bottom: 5%;
+  color: #081B50;
+  font-family: 'Neutraface 2 Text';
+  font-weight: 200;
+  margin-bottom: 5%;
 }
 
+.rslider {
+  z-index:1;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+
+.rs-range-color {
+  background-color: white;
+  
+}
+
+.rs-path-color  {
+  background-color: hsl(210, 100%, 57%);
+}
+
+
 #myndTitle {
+  display: table;
+  margin: auto;
   position: relative;
   font-family: 'Futura PT';
   font-size: 10em;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 10rem;
   font-weight: 400;
-  margin-bottom: -8%;
+  margin-bottom: 0;
   z-index: 2;
-}
-
-#gif {
-  width: 45%;
-  display: block;
-  margin: 0 auto 10% auto;
 }
 
 
@@ -33,14 +45,14 @@ body {
 }
 
 #interactivePrototype {
-  margin-top: 4%;
+  margin-top: 8rem;
   text-align: center;
   font-size: 1.1em;
 }
 
 
 #iPhoneText {
-  padding-top: 0.2%;
+  margin: 1rem 0;
   font-size: 1.1em;
   font: 'Neutraface 2 Text';
   font-weight: 200;
@@ -49,12 +61,19 @@ body {
 
 
 #iphoneContainer {
-  margin: 1% auto 3% auto; 
+  margin: 1rem auto 8rem auto; 
   position:relative; 
   width: 18em;
   height: 35.617em;
 }
 
+#colorContainer {
+  margin-top: 8rem;
+}
+
+#typeContainer {
+  margin-top: 4rem;
+}
 
 #iphone {
   position:absolute; 
@@ -128,8 +147,7 @@ body {
 .colorBlock {
   display: inline-block;
   text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
+  margin-top: 1rem;
 }
 
 #leftColorDot {
@@ -152,13 +170,13 @@ body {
 .colorDotCode {
   font-family: 'Iosevka';
   font-weight: 100;
-  font-size: 0.6em;
-  margin: 0.4em auto 0 auto;
+  font-size: 0.8em;
+  margin: 0.8em auto 0 auto;
 }
 
 
 #rightColorBlock {
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 
@@ -175,7 +193,7 @@ body {
 }
 
 .videoAndDescrMyndContainer {
-  margin-top: 4%;
+  margin-top: 8rem;
 }
 
 #videoMyndUI1 {
