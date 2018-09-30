@@ -28,8 +28,7 @@ module.exports = function (grunt) {
     ]
       },
       dist: {
-        cwd: 'dist',
-        src: '**/*.min.css'
+        src: 'dist/**/*.min.css'
       }
     },
     cssmin: { // Begin CSS Minify Plugin
@@ -37,7 +36,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'dist',
-          src: ['**/*.min.css'],
+          src: ['dist/**/*.min.css'],
           dest: '',
     }]
       }
@@ -45,7 +44,7 @@ module.exports = function (grunt) {
     copy: {
       main: {
         expand: true,
-        src: ['**', '!node_modules/**', '!Gruntfile.js', '!dist/**', '!package.json', '!package.lock.json', '!**/.scss',],
+        src: ['**', '!node_modules/**', '!Gruntfile.js', '!dist/**', '!package.json', '!package.lock.json', '!**/*.scss',],
         dest: 'dist/',
       },
     },
