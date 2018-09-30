@@ -13,8 +13,8 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '',
           src: ['**/*.scss'],
-          dest: '',
-          ext: '.css'
+          dest: 'dist',
+          ext: '.min.css'
       }]
       }
     },
@@ -28,24 +28,31 @@ module.exports = function (grunt) {
     ]
       },
       dist: {
-        src: '**/*.css'
+        cwd: 'dist',
+        src: '**/*.min.css'
       }
     },
     cssmin: { // Begin CSS Minify Plugin
       target: {
         files: [{
           expand: true,
-          cwd: '',
-          src: ['**/*.css', '!**/*.min.css'],
+          cwd: 'dist',
+          src: ['**/*.min.css'],
           dest: '',
-          ext: '.min.css'
     }]
       }
+    },
+    copy: {
+      main: {
+        expand: true,
+        src: ['**', '!node_modules/**', '!Gruntfile.js', '!dist/**', '!package.json', '!package.lock.json', '!**/.scss',],
+        dest: 'dist/',
+      },
     },
     watch: { // Compile everything into one task with Watch Plugin
       css: {
         files: '**/*.scss',
-        tasks: ['sass', 'postcss', 'cssmin']
+        tasks: ['sass', 'postcss', 'cssmin', 'copy']
       }
     }
   });
@@ -53,7 +60,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Register Grunt tasks
