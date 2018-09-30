@@ -9,7 +9,8 @@ body {
 
 .descrRowContainer {
     margin: 0 0 0 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* linear-gradient(
@@ -35,7 +36,8 @@ body {
 .descrProjectRight {
     border-left: 1px solid #E0E0E0;
     padding-left: 3%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .lastDescrPers {
