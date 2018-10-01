@@ -44,7 +44,7 @@ module.exports = function (grunt) {
     copy: {
       main: {
         expand: true,
-        src: ['**', '!node_modules/**', '!Gruntfile.js', '!dist/**', '!package.json', '!package-lock.json', '!**/*.scss',],
+        src: ['**', '!node_modules/**', '!Gruntfile.js', '!dist/**', '!package.json', '!package-lock.json', '!**/*.scss', '!Readme.md'],
         dest: 'dist/',
       },
     },

@@ -10,7 +10,11 @@ body {
 .rslider {
   z-index:1;
   margin: auto;
+  margin-top: -10rem;
   margin-bottom: 10rem;
+  @include tablet {
+    margin-top: 0;
+  }
 }
 
 .rs-range-color {
