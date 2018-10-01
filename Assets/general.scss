@@ -83,24 +83,50 @@ h4 {
   float: left;
   width: 40%;
   text-align: right;
+  @include phone {
+    padding-right: 0;
+  }
 }
 
 .descrProjectRight {
   box-sizing: border-box;
   float: right;
   width: 60%;
+  @include phone {
+    margin-top: 1.5rem;
+  }
+}
+
+@include phone {
+  .descrProjectLeft, .descrProjectRight {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+  }
 }
 
 .descrRowContainer {
   display: flex;
-  margin-top: 2%;
+  margin-top: 2rem;
+  @include phone {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
 }
-
 
 
 .maxWidthContainer {
   max-width: 1020px;
   margin: auto;
+  @include tablet {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  @include phone {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -112,31 +138,12 @@ h4 {
   }  
 }
 
-@include laptop {
-  .maxWidthContainer {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-}
 
 
 
-  /* general */
-@include phone {
-  .maxWidthContainer {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .descrRowContainer {
-    flex-direction: column;
-  }
-  .descrProjectLeft, .descrProjectRight {
-    float: none;
-    width: 100%;
-    text-align: left;
-    padding-left: 0;
-  }
-}
+
+
+
 
 
 

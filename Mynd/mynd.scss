@@ -4,7 +4,7 @@ body {
   color: #081B50;
   font-family: 'Neutraface 2 Text';
   font-weight: 200;
-  margin-bottom: 5%;
+  margin-bottom: 5rem;
 }
 
 .rslider {
@@ -34,6 +34,11 @@ body {
   font-weight: 400;
   margin-bottom: 0;
   z-index: 2;
+  @include phone {
+    font-size: 600%;
+    margin-left: auto; 
+    margin-right: auto;
+  }
 }
 
 
@@ -50,6 +55,7 @@ body {
   margin-top: 8rem;
   text-align: center;
   font-size: 1.1em;
+  @include phone {text-align: left;}
 }
 
 
@@ -59,6 +65,16 @@ body {
   font: 'Neutraface 2 Text';
   font-weight: 200;
   font-style: italic;
+  @include phone {display: none;}
+}
+
+#iphoneTextPhone {
+  display: none;
+  @include phone {
+    display: block;
+    margin-top: 2rem;
+    text-decoration: underline;
+  }
 }
 
 
@@ -67,6 +83,7 @@ body {
   position:relative; 
   width: 18em;
   height: 35.617em;
+  @include phone {display: none;}
 }
 
 #colorContainer {
@@ -74,7 +91,7 @@ body {
 }
 
 #typeContainer {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 #iphone {
@@ -107,6 +124,7 @@ body {
 
 #processContainer {
   margin-bottom: 4%;
+  @include phone{margin-top: 8rem;}
 }
 
 #processTitle {
@@ -117,12 +135,19 @@ body {
   display: block;
   float: left;
   width: 10em;
+  @include tablet {float: none;
+    margin: 1rem 0;
+  }
+  @include phone {
+    margin: 1.5rem 0;
+  }
 }
 
 #textNearProcessMynd {
   vertical-align: top;
   overflow-x: hidden;
   padding-left: 0.8em;
+  @include tablet {padding-left: 0;}
 }
 
 #containerProcessMynd {
@@ -136,6 +161,10 @@ body {
   display: block;
   width: 80%;
   border: 1px solid black;
+  @include tablet {margin-left: 0;}
+  @include phone {
+    margin-top: 2em;
+  }
 }
 
 
@@ -147,6 +176,7 @@ body {
   display: inline-block;
   text-align: center;
   margin-top: 1rem;
+  @include phone {margin-top: 1.5rem;}
 }
 
 #leftColorDot {
@@ -189,21 +219,33 @@ body {
   font-family: 'Roboto';
   font-size: 3em;
   font-weight: 200;
+  @include phone {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
 }
 
 .videoAndDescrMyndContainer {
   margin-top: 8rem;
+  @include phone {flex-direction: column-reverse;}
 }
 
-#videoMyndUI1 {
+.videoMyndUI {
   display: block;
   width: 14em;
   float: right;
+  @include tablet {width: 100%;}
+  @include phone {
+    width: 80%;
+    margin: auto;
+    float: none;
+  }
 }
 
 .textRightOfVideo {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 1em 0;
+  @include phone {margin: 1.5em 0;}
 }
 
 .bulletPointContainer {
@@ -212,8 +254,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  @include phone {
+    display: none;
+  }
 }
 
 .bpAndHeading {
@@ -222,8 +267,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .bulletPoint {
@@ -232,7 +277,7 @@ body {
   background-color: #DDEEF4;
   border-radius: 50%;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .headingInBulletPointContainer {
@@ -242,23 +287,5 @@ body {
 
 .textInBulletPointContainer {
   padding-left: 2em;
-}
-
-
-/* mynd */
-@include phone {
-  #myndTitle {
-    font-size: 600%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #processImageMynd {
-    float: none;
-    margin: 1rem 0;
-  }
-
-  #textNearProcessMynd {
-    padding-left: 0;
-  }
+  @include tablet {padding-left: 1em;}
 }
