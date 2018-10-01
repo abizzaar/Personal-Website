@@ -1,13 +1,31 @@
 @import '../Assets/base';
 
+@mixin vr-tablet {
+  @media only screen and (max-width: 1000px) {
+    @content;
+  }
+}
+
 body {
     color: #BABABA;
-    background: black;
+    background: #191919; /* rgba(0,0,0,0.9) */
     margin-bottom: 7%;
 }
 
+#abizarNav {
+  color: rgba(255,255,255,0.5);
+  background-color: #191919;
+  &:hover {
+    color: white;
+  }
+  @media only screen and (max-width: 1300px) {
+    background-color: black;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+}
+
 video, img {
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
   margin: 0;
 }
 
@@ -34,9 +52,19 @@ h2 {
 #decorateChair {
     width: 100%;
     margin-bottom: 8rem;
-    margin-top: -8%;
     border: none;
     border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-top: calc(-30% + 10rem);
+    @include tablet {
+      margin-bottom: 4rem;
+    }
+}
+
+h2 {
+  margin-bottom: 1rem;
+  @include phone {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -46,8 +74,14 @@ h2 {
 
 #weDesignedAVRExperience {
     border-left: 0;
-    padding-bottom: 3%;
+    padding-bottom: 4rem;
     color: #F2F2F2;
+    @include phone {
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      margin-top: 2.5rem;
+    }
 }
 
 .descrRowContainer {
@@ -56,10 +90,7 @@ h2 {
             box-sizing: border-box;
 }
 
-/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
-.descrProjectLeft, .descrProjectRight {
-    padding-bottom: 2%;
-}
+
 
 .descrProjectLeft {
     padding-top: 0.2rem;
@@ -71,7 +102,22 @@ h2 {
     border-left: 1px solid #696969;
     padding-left: 3rem;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
+    @include phone {
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+    }
+}
+
+/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
+.descrProjectLeft, .descrProjectRight {
+  padding-bottom: 3rem;
+  @include phone {
+    text-align: left;
+    border: none;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
 }
 
 #therapyOSContainer {
@@ -97,6 +143,10 @@ h2 {
 #ourUserContainerVR {
     margin-top: 8rem;
     margin-left: 2rem;
+    @include phone {
+      margin-left: 0;
+      margin-top: 4rem;
+    }
 }
 
 #ourUserTextContainerVR {
@@ -106,6 +156,10 @@ h2 {
     display: inline-block;
     width: calc(100% - 18rem - 1em);   
     vertical-align: middle;
+    @include phone {
+      display: block;
+      width: 100%;
+    }
 }
 
 #becauseAutismHasSuch {
@@ -113,7 +167,7 @@ h2 {
 }
 
 .bulletPointAndStatementVR {
-    margin-top: 1%;
+    margin-top: 1rem;
 }
 
 .bulletPointContainerVR {
@@ -144,11 +198,20 @@ h2 {
     width: 16rem;
     display: inline-block;
     vertical-align: top;
+    @include phone {
+      width: 60%;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
 }
 
 #processContainer {
     margin-top: 8rem;
     margin-left: 2rem;
+    @include phone {
+      margin-left: 0;
+    }
 }
 
 #processDiagramVR {
@@ -168,6 +231,12 @@ h2 {
     word-wrap: break-word;
 }
 
+#processDiagramVR, #processWords {
+  @include phone {
+    display: none;
+  }
+}
+
 .eachProcessWord {
     width: 18%;
     margin-right: 1.5%;
@@ -180,7 +249,7 @@ h2 {
 #ethanVRVideo {
     padding-left: 0.2%;
     width: 95%;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 #ourPrototypeContainerVR {
@@ -191,7 +260,6 @@ h2 {
 }
 
 #ourPrototypeHeadingVR {
-    margin-bottom: 0.5em;
 }
 
 #ourPrototypeDiagramContainer {
@@ -234,10 +302,11 @@ h2 {
     font-weight: 500;
     padding-bottom: 0.5em;
     word-wrap: break-word;
+    margin-bottom: 0;
 }
 
 .environmentQuestions {
-   padding-bottom: 0.1em;
+   padding-bottom: 0.3em;
    color: rgba(255,255,255,0.9);
 }
 
@@ -251,19 +320,38 @@ h2 {
 
 .environmentContainer {
     margin-top: 10rem;
+    @include vr-tablet {
+      flex-direction: column;
+    }
 }
 
 .envLeft, .envRight {
     padding-top: 0;
     padding-bottom: 0;
+    @include vr-tablet {
+      width: 90%;
+      text-align: left;
+      border: none;
+      margin: auto;
+    }
 }
 
 .envLeft {
     padding-left: 0;
 }
 
+.envRight {
+  @include vr-tablet {
+    padding-left: 0;
+  }
+}
+
 .underEnvHeadingText {
   padding-left: 3rem;
+  @include vr-tablet {
+    padding-left: 0;
+    padding-bottom: 1.5em;
+  }
 }
 
 
@@ -305,12 +393,13 @@ h2 {
 }
 
 #finalPresentationBlock {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    width: 90%;
+    margin: auto;
     margin-top: 10rem;
 }
 
 #VRIntroContainer {
-  margin-left: -2rem;
-  width: 98%;
+  @include phone {
+    border-bottom: 1px solid rgba(255,255,255, 0.4);
+  }
 }

@@ -20,16 +20,15 @@ body {
 
 #abizarNav {
   position: fixed;
-  padding-left: 0.6em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  padding-right: 0.6em;
+  margin: 0.3em 0.7em;
+  padding: 0 0.2em;
   font-size: 1.5em;
   font-weight: 300;
   top: 0;
   color: #7A7A7A;
   cursor: pointer;
-  z-index: 10; }
+  z-index: 10;
+  background: white; }
 
 #abizarNav:hover {
   color: black; }
@@ -98,7 +97,7 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
   @media only screen and (max-width: 700px) {
     .descrRowContainer {
       -webkit-box-orient: vertical;
@@ -124,7 +123,9 @@ h4 {
     background: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     width: 100%;
-    color: black; } }
+    color: black;
+    margin: 0;
+    padding: 0.3em 0.9em; } }
 /*
 FUTURA PT
 */

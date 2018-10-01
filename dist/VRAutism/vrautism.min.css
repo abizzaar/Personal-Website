@@ -1,10 +1,21 @@
 body {
   color: #BABABA;
-  background: black;
+  background: #191919;
+  /* rgba(0,0,0,0.9) */
   margin-bottom: 7%; }
 
+#abizarNav {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #191919; }
+  #abizarNav:hover {
+    color: white; }
+  @media only screen and (max-width: 1300px) {
+    #abizarNav {
+      background-color: black;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
+
 video, img {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 0; }
 
 *::-moz-selection {
@@ -26,26 +37,37 @@ h2 {
 #decorateChair {
   width: 100%;
   margin-bottom: 8rem;
-  margin-top: -8%;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: calc(-30% + 10rem); }
+  @media only screen and (max-width: 1120px) {
+    #decorateChair {
+      margin-bottom: 4rem; } }
+
+h2 {
+  margin-bottom: 1rem; }
+  @media only screen and (max-width: 700px) {
+    h2 {
+      margin-bottom: 0; } }
 
 .yellowText {
   color: #F8ED3A; }
 
 #weDesignedAVRExperience {
   border-left: 0;
-  padding-bottom: 3%;
+  padding-bottom: 4rem;
   color: #F2F2F2; }
+  @media only screen and (max-width: 700px) {
+    #weDesignedAVRExperience {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      margin-top: 2.5rem; } }
 
 .descrRowContainer {
   margin: 0 0 0 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
-/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
-.descrProjectLeft, .descrProjectRight {
-  padding-bottom: 2%; }
 
 .descrProjectLeft {
   padding-top: 0.2rem;
@@ -57,6 +79,20 @@ h2 {
   padding-left: 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media only screen and (max-width: 700px) {
+    .descrProjectRight {
+      margin-bottom: 3rem;
+      margin-top: 1rem; } }
+
+/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
+.descrProjectLeft, .descrProjectRight {
+  padding-bottom: 3rem; }
+  @media only screen and (max-width: 700px) {
+    .descrProjectLeft, .descrProjectRight {
+      text-align: left;
+      border: none;
+      padding-left: 0;
+      padding-bottom: 0; } }
 
 #therapyOSLogo {
   padding-right: 0.5em;
@@ -75,6 +111,10 @@ h2 {
 #ourUserContainerVR {
   margin-top: 8rem;
   margin-left: 2rem; }
+  @media only screen and (max-width: 700px) {
+    #ourUserContainerVR {
+      margin-left: 0;
+      margin-top: 4rem; } }
 
 #ourUserTextContainerVR {
   padding-top: 3%;
@@ -83,12 +123,16 @@ h2 {
   display: inline-block;
   width: calc(100% - 18rem - 1em);
   vertical-align: middle; }
+  @media only screen and (max-width: 700px) {
+    #ourUserTextContainerVR {
+      display: block;
+      width: 100%; } }
 
 #becauseAutismHasSuch {
   margin-bottom: 3%; }
 
 .bulletPointAndStatementVR {
-  margin-top: 1%; }
+  margin-top: 1rem; }
 
 .bulletPointContainerVR {
   display: inline-block;
@@ -115,10 +159,19 @@ h2 {
   width: 16rem;
   display: inline-block;
   vertical-align: top; }
+  @media only screen and (max-width: 700px) {
+    #ethanPic {
+      width: 60%;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
 
 #processContainer {
   margin-top: 8rem;
   margin-left: 2rem; }
+  @media only screen and (max-width: 700px) {
+    #processContainer {
+      margin-left: 0; } }
 
 #processDiagramVR {
   margin-right: 20%;
@@ -134,6 +187,10 @@ h2 {
   display: flex;
   word-wrap: break-word; }
 
+@media only screen and (max-width: 700px) {
+  #processDiagramVR, #processWords {
+    display: none; } }
+
 .eachProcessWord {
   width: 18%;
   margin-right: 1.5%;
@@ -144,16 +201,13 @@ h2 {
 #ethanVRVideo {
   padding-left: 0.2%;
   width: 95%;
-  margin-top: 1em; }
+  margin-top: 2em; }
 
 #ourPrototypeContainerVR {
   display: block;
   margin-left: 2rem;
   margin-top: 10rem;
   margin-bottom: 3%; }
-
-#ourPrototypeHeadingVR {
-  margin-bottom: 0.5em; }
 
 #ourPrototypeDiagramContainer {
   margin-left: -1.3rem;
@@ -188,10 +242,11 @@ h2 {
   font-size: 2.5em;
   font-weight: 500;
   padding-bottom: 0.5em;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  margin-bottom: 0; }
 
 .environmentQuestions {
-  padding-bottom: 0.1em;
+  padding-bottom: 0.3em;
   color: rgba(255, 255, 255, 0.9); }
 
 #secondEnvQ {
@@ -199,16 +254,36 @@ h2 {
 
 .environmentContainer {
   margin-top: 10rem; }
+  @media only screen and (max-width: 1000px) {
+    .environmentContainer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .envLeft, .envRight {
   padding-top: 0;
   padding-bottom: 0; }
+  @media only screen and (max-width: 1000px) {
+    .envLeft, .envRight {
+      width: 90%;
+      text-align: left;
+      border: none;
+      margin: auto; } }
 
 .envLeft {
   padding-left: 0; }
 
+@media only screen and (max-width: 1000px) {
+  .envRight {
+    padding-left: 0; } }
+
 .underEnvHeadingText {
   padding-left: 3rem; }
+  @media only screen and (max-width: 1000px) {
+    .underEnvHeadingText {
+      padding-left: 0;
+      padding-bottom: 1.5em; } }
 
 .fullSizeVideoBlockVR {
   padding-top: 6rem;
@@ -242,10 +317,10 @@ h2 {
   vertical-align: top; }
 
 #finalPresentationBlock {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  width: 90%;
+  margin: auto;
   margin-top: 10rem; }
 
-#VRIntroContainer {
-  margin-left: -2rem;
-  width: 98%; }
+@media only screen and (max-width: 700px) {
+  #VRIntroContainer {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); } }
