@@ -1,5 +1,18 @@
 @import '../Assets/base';
 
+.bulletPoint {
+  height: 0.4rem;
+  width: 0.4rem;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .greyUnderline {
   padding-left: 0.2em;
   padding-right: 0.2em;
@@ -53,8 +66,9 @@
     margin-bottom: 1rem;
 }
 
-#myWorkDescr1, #myWorkDescr2, #myWorkDescr3 {
-  margin-top: 1rem;
+.myWorkDescr {
+  margin-top: 1.5rem;
+  font-weight: 200;
 }
 
 .homePageEmphasis {
@@ -142,7 +156,7 @@
     margin-bottom: 5rem;
   }
 
-  #myWorkDescr1, #myWorkDescr2, #myWorkDescr3 {
+  .myWorkDescr {
     margin-top: 2rem;
   }
 }
