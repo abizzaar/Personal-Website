@@ -11,8 +11,6 @@ body {
     margin-bottom: 7%;
 }
 
-
-
 video, img {
   border: 2px solid rgba(0,0,0,1);
   margin: 0;
@@ -21,8 +19,8 @@ video, img {
 .underline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(0,0,0,0.08)), color-stop(0, white));
-  background-image: linear-gradient(to right, rgba(0,0,0,0.08) 100%, white 0);;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #EBEBEB), color-stop(0, white));
+  background-image: linear-gradient(to right, #EBEBEB 100%, white 0);;
   background-position: 0 0.8em;
   background-repeat: repeat-x;
 }
@@ -31,22 +29,6 @@ h2 {
   color: black;
 }
 
-#decorateChairContainer {
-    width: 100%;
-    overflow:hidden;
-    display:block;
-}
-
-#decorateChair {
-    width: 100%;
-    margin-bottom: 8rem;
-    border: none;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    margin-top: calc(-30% + 10rem);
-    @include tablet {
-      margin-bottom: 4rem;
-    }
-}
 
 h2 {
   margin-bottom: 1rem;
@@ -60,17 +42,6 @@ h2 {
     color: rgba(0,0,0,0.7);
 }
 
-#weDesignedAVRExperience {
-    border-left: 0;
-    padding-bottom: 4rem;
-    color: #F2F2F2;
-    @include phone {
-      border-bottom: 1px solid rgba(255,255,255,0.4);
-      padding-bottom: 2rem;
-      margin-bottom: 3rem;
-      margin-top: 2.5rem;
-    }
-}
 
 .descrRowContainer {
     -webkit-box-sizing: border-box;
@@ -87,10 +58,6 @@ h2 {
 .descrProjectRight {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    @include phone {
-      margin-bottom: 3rem;
-      margin-top: 1rem;
-    }
 }
 
 /* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
@@ -151,6 +118,9 @@ h2 {
 
 .bulletPointAndStatementVR {
     margin-top: 1rem;
+    @include phone {
+      margin-top: 2rem;
+    }
 }
 
 .bulletPointContainerVR {
@@ -195,11 +165,14 @@ h2 {
     @include phone {
       margin-left: 0;
     }
+    h2 {
+      margin-bottom: 1.5em;
+      @include phone {margin-bottom: 2rem;}
+    }
 }
 
 #processDiagramVR {
     margin-right: 20%;
-    margin-top: 1.5em;
     margin-bottom: 0.5em;
     border: none;
 }   
@@ -239,15 +212,20 @@ h2 {
     margin-left: 2rem;
     margin-top: 10rem;
     margin-bottom: 3%;
+    @include phone {
+      margin-left: 0;
+    }
 }
 
 #ourPrototypeHeadingVR {
+  margin-bottom: 2rem;
 }
 
 #ourPrototypeDiagramContainer {
     margin-left: -1.3rem;
     margin-top: 2em;
     margin-bottom: 0.5em;
+    @include phone {display: none;}
 }
 
 #ourPrototypeDiagram {
@@ -261,6 +239,7 @@ h2 {
     margin-right: 6.8%;
     display: inline-block;
     vertical-align: top;
+    @include phone {display: none;}
 }
 
 .ourPrototypeBlockHeading {
@@ -317,6 +296,9 @@ h2 {
       border: none;
       margin: auto;
     }
+    @include phone {
+      width: 100%;
+    }
 }
 
 .envLeft {
@@ -338,12 +320,16 @@ h2 {
   }
 }
 
+.halfSizeMediaContainer {
+  padding-top: 6rem;
+}
 
 .fullSizeVideoBlockVR {
     padding-top: 6rem;
     width: 90%;
     display: block;
     margin: auto;
+    @include phone {width: 100%;}
 }
 
 .fullSizeVideo {
@@ -357,29 +343,12 @@ h2 {
     font-size: 0.95em;
 }
 
-.halfSizeMediaContainer {
-    padding-top: 6rem;
-    vertical-align: middle;
-}
-
-.halfSizeMediaBlockLeft {
-    margin-left: 10%;
-    display: inline-block;
-    width: 37%;
-    vertical-align: top;
-}
-
-.halfSizeMediaBlockRight {
-    margin-left: 4%;
-    display: inline-block;
-    width: 38.5%;
-    vertical-align: top;
-}
-
 #finalPresentationBlock {
-    width: 90%;
     margin: auto;
     margin-top: 10rem;
+    @include phone {
+      width: 100%;
+    }
 }
 
 #VRIntroContainer {

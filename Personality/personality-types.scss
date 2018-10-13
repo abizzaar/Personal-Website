@@ -1,66 +1,17 @@
+@import '../Assets/base';
+
 body {
     margin-bottom: 7%;
 }
 
-#imgPersonalityBleed {
-    width: 100%;
-    margin-bottom: 3%;
-}
 
-.descrRowContainer {
-    margin: 0 0 0 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-/* linear-gradient(
-      to right, 
-      #fffdc2,
-      #fffdc2 15%,
-      #d7f0a2 15%,
-      #d7f0a2 85%,
-      #fffdc2 85%
-    );*/
-
-
-/* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
-.descrProjectLeft, .descrProjectRight {
-    padding-bottom: 2%;
-}
-
-.descrProjectLeft {
-    padding-top: 0.1%;
-    text-align: right;
-}
-
-.descrProjectRight {
-    border-left: 1px solid #E0E0E0;
-    padding-left: 3%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-.lastDescrPers {
-    padding-bottom: 0;
-}
-
-.redBlueUnderline {
-    padding-left: 0.1em;
-     padding-right: 0.1em;
-   
-     
-     background-position: 0 1.15em;
-     background-repeat: repeat-x;
- 
-     background-image: linear-gradient(
-         to bottom, 
-         #BC0000,
-         #BC0000 2px,
-         white 2px, 
-         white 4px
-       );
-       padding-bottom: 2px;
-       border-bottom: solid 2px #0F51D0;
+.redUnderline {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #FAEAFE), color-stop(0, white));
+  background-image: linear-gradient(to right, #FAEAFE 100%, white 0);;
+  background-position: 0 0.85em;
+  background-repeat: repeat-x;
 }
 
 .hyperlinkPers {
@@ -69,45 +20,47 @@ body {
 }
 
 #resultsContainer {
-    width: 40%; 
-    margin: auto
+    margin: auto;
+    width: 90%;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    @include phone {
+      width: 100%;
+    }
 }
 #resultsHeading {
     font-size: 1.8em;
-    margin-top: 12%;
+    margin-bottom: 2rem;
     text-align: center;
-    margin-bottom: 4%;
 }
 
 #paragraphResultsOne {
     margin-left: 0%;
-    text-align: center;
 }
 
 #imgTraining {
     display: block;
-    width: 80%;
+    width: 35rem;
     margin: auto;
-    margin-top: 4%;
-    
+    margin-top: 3rem;
+    @include phone {
+      width: 100%;
+    }
 }
 
 #paragraphResultsTwo {
-    text-align: center;
-    margin-top: 4%;
-}
-   
-#imgFeeling {
-    display: block;
-    width: 55%;
-    margin: auto;
     margin-top: 4%;
 }
 
-#imgThinking {
-    display: block;
-    width: 55%;
-    margin: auto;
-    margin-top: 4%;
-    margin-bottom: 10%;
+@include phone {
+  .halfSizeMediaContainer {
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+    .halfSizeMedia {
+      width: 80%;
+      margin: auto;
+    }
+  }
 }

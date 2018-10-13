@@ -40,8 +40,7 @@ body {
   top: 0;
   color: #7A7A7A;
   cursor: pointer;
-  z-index: 10;
-  background: white; }
+  z-index: 10; }
 
 #abizarNav:hover {
   color: black; }
@@ -116,8 +115,7 @@ h4 {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column;
-      margin-top: 4rem; } }
+              flex-direction: column; } }
 
 .maxWidthContainer {
   max-width: 1020px;
@@ -139,6 +137,23 @@ h4 {
     color: black;
     margin: 0;
     padding: 0.3em 0.9em; } }
+.halfSizeMediaContainer {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.halfSizeMedia {
+  width: 45%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0; }
+
 /*
 FUTURA PT
 */

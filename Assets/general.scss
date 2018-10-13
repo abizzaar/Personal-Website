@@ -44,7 +44,6 @@ body {
   color: #7A7A7A;
   cursor: pointer;
   z-index: 10;
-  background: white;
 }
 
 #abizarNav:hover {
@@ -123,7 +122,6 @@ h4 {
   margin-top: 3rem;
   @include phone {
     flex-direction: column;
-    margin-top: 4rem;
   }
 }
 
@@ -153,6 +151,17 @@ h4 {
 }
 
 
+.halfSizeMediaContainer {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.halfSizeMedia {
+  width: 45%;
+  flex-grow: 0;
+}
 
 
 

@@ -9,28 +9,13 @@ video, img {
 .underline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(0, 0, 0, 0.08)), color-stop(0, white));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08) 100%, white 0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #EBEBEB), color-stop(0, white));
+  background-image: linear-gradient(to right, #EBEBEB 100%, white 0);
   background-position: 0 0.8em;
   background-repeat: repeat-x; }
 
 h2 {
   color: black; }
-
-#decorateChairContainer {
-  width: 100%;
-  overflow: hidden;
-  display: block; }
-
-#decorateChair {
-  width: 100%;
-  margin-bottom: 8rem;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: calc(-30% + 10rem); }
-  @media only screen and (max-width: 1120px) {
-    #decorateChair {
-      margin-bottom: 4rem; } }
 
 h2 {
   margin-bottom: 1rem; }
@@ -40,17 +25,6 @@ h2 {
 
 .yellowText {
   color: rgba(0, 0, 0, 0.7); }
-
-#weDesignedAVRExperience {
-  border-left: 0;
-  padding-bottom: 4rem;
-  color: #F2F2F2; }
-  @media only screen and (max-width: 700px) {
-    #weDesignedAVRExperience {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-      padding-bottom: 2rem;
-      margin-bottom: 3rem;
-      margin-top: 2.5rem; } }
 
 .descrRowContainer {
   -webkit-box-sizing: border-box;
@@ -63,10 +37,6 @@ h2 {
 .descrProjectRight {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  @media only screen and (max-width: 700px) {
-    .descrProjectRight {
-      margin-bottom: 3rem;
-      margin-top: 1rem; } }
 
 /* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
 @media only screen and (max-width: 700px) {
@@ -115,6 +85,9 @@ h2 {
 
 .bulletPointAndStatementVR {
   margin-top: 1rem; }
+  @media only screen and (max-width: 700px) {
+    .bulletPointAndStatementVR {
+      margin-top: 2rem; } }
 
 .bulletPointContainerVR {
   display: inline-block;
@@ -154,10 +127,14 @@ h2 {
   @media only screen and (max-width: 700px) {
     #processContainer {
       margin-left: 0; } }
+  #processContainer h2 {
+    margin-bottom: 1.5em; }
+    @media only screen and (max-width: 700px) {
+      #processContainer h2 {
+        margin-bottom: 2rem; } }
 
 #processDiagramVR {
   margin-right: 20%;
-  margin-top: 1.5em;
   margin-bottom: 0.5em;
   border: none; }
 
@@ -189,11 +166,20 @@ h2 {
   margin-left: 2rem;
   margin-top: 10rem;
   margin-bottom: 3%; }
+  @media only screen and (max-width: 700px) {
+    #ourPrototypeContainerVR {
+      margin-left: 0; } }
+
+#ourPrototypeHeadingVR {
+  margin-bottom: 2rem; }
 
 #ourPrototypeDiagramContainer {
   margin-left: -1.3rem;
   margin-top: 2em;
   margin-bottom: 0.5em; }
+  @media only screen and (max-width: 700px) {
+    #ourPrototypeDiagramContainer {
+      display: none; } }
 
 #ourPrototypeDiagram {
   padding-left: 1rem;
@@ -205,6 +191,9 @@ h2 {
   margin-right: 6.8%;
   display: inline-block;
   vertical-align: top; }
+  @media only screen and (max-width: 700px) {
+    .ourPrototypeBlock {
+      display: none; } }
 
 .ourPrototypeBlockHeading {
   font-weight: 400;
@@ -252,6 +241,9 @@ h2 {
       text-align: left;
       border: none;
       margin: auto; } }
+  @media only screen and (max-width: 700px) {
+    .envLeft, .envRight {
+      width: 100%; } }
 
 .envLeft {
   padding-left: 0; }
@@ -269,11 +261,17 @@ h2 {
       padding-left: 0;
       padding-bottom: 1.5em; } }
 
+.halfSizeMediaContainer {
+  padding-top: 6rem; }
+
 .fullSizeVideoBlockVR {
   padding-top: 6rem;
   width: 90%;
   display: block;
   margin: auto; }
+  @media only screen and (max-width: 700px) {
+    .fullSizeVideoBlockVR {
+      width: 100%; } }
 
 .fullSizeVideo {
   width: 100%; }
@@ -284,26 +282,12 @@ h2 {
   color: #9A9A9A;
   font-size: 0.95em; }
 
-.halfSizeMediaContainer {
-  padding-top: 6rem;
-  vertical-align: middle; }
-
-.halfSizeMediaBlockLeft {
-  margin-left: 10%;
-  display: inline-block;
-  width: 37%;
-  vertical-align: top; }
-
-.halfSizeMediaBlockRight {
-  margin-left: 4%;
-  display: inline-block;
-  width: 38.5%;
-  vertical-align: top; }
-
 #finalPresentationBlock {
-  width: 90%;
   margin: auto;
   margin-top: 10rem; }
+  @media only screen and (max-width: 700px) {
+    #finalPresentationBlock {
+      width: 100%; } }
 
 @media only screen and (max-width: 700px) {
   #VRIntroContainer {
