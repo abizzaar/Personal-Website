@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     },
     watch: { // Compile everything into one task with Watch Plugin
       css: {
-        files: '**/*.scss',
+        files: ['**/*.scss', '**/*.html', '!dist/**'],
         tasks: ['sass', 'postcss', 'cssmin', 'copy']
       }
     }

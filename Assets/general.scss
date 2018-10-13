@@ -1,5 +1,14 @@
 @import 'base';
 
+.pageHeading {
+  margin: 8rem auto 6rem auto;
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid black;
+  font-family: 'Futura PT';
+  font-weight: 400;
+}
 
 body {
   font-family: 'Neutraface 2 Text';
@@ -14,6 +23,10 @@ body {
 *::selection {
   background-color: black;
   color: white;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 

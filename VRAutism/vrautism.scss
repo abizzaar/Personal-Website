@@ -7,40 +7,28 @@
 }
 
 body {
-    color: #BABABA;
-    background: #191919; /* rgba(0,0,0,0.9) */
+    color: black;
     margin-bottom: 7%;
 }
 
-#abizarNav {
-  color: rgba(255,255,255,0.5);
-  background-color: #191919;
-  &:hover {
-    color: white;
-  }
-  @media only screen and (max-width: 1300px) {
-    background-color: black;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-  }
-}
+
 
 video, img {
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 2px solid rgba(0,0,0,1);
   margin: 0;
 }
 
-*::-moz-selection {
-  background-color: rgba(255,255,255,0.8);
-  color: rgba(0,0,0,1);
-}
-
-*::selection {
-  background-color: rgba(255,255,255,0.8);
-  color: rgba(0,0,0,1);
+.underline {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(0,0,0,0.08)), color-stop(0, white));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.08) 100%, white 0);;
+  background-position: 0 0.8em;
+  background-repeat: repeat-x;
 }
 
 h2 {
-  color: rgba(255,255,255,0.8);
+  color: black;
 }
 
 #decorateChairContainer {
@@ -69,7 +57,7 @@ h2 {
 
 
 .yellowText {
-    color: #F8ED3A;
+    color: rgba(0,0,0,0.7);
 }
 
 #weDesignedAVRExperience {
@@ -85,7 +73,6 @@ h2 {
 }
 
 .descrRowContainer {
-    margin: 0 0 0 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -95,12 +82,9 @@ h2 {
 .descrProjectLeft {
     padding-top: 0.2rem;
     text-align: right;
-    padding-right: 3rem;
 }
 
 .descrProjectRight {
-    border-left: 1px solid #696969;
-    padding-left: 3rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     @include phone {
@@ -111,7 +95,6 @@ h2 {
 
 /* added here instead of in descrRowContainer so that border of descrProjectRight stretches across all elements instead of being spaced out */
 .descrProjectLeft, .descrProjectRight {
-  padding-bottom: 3rem;
   @include phone {
     text-align: left;
     border: none;
@@ -247,7 +230,6 @@ h2 {
 
 
 #ethanVRVideo {
-    padding-left: 0.2%;
     width: 95%;
     margin-top: 2em;
 }
@@ -282,8 +264,9 @@ h2 {
 }
 
 .ourPrototypeBlockHeading {
-    font-weight: 300;
-    margin-bottom: 0.3em;
+    font-weight: 400;
+    margin-bottom: 0.3em;     
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .ourPrototypeBlockImage {
@@ -307,7 +290,7 @@ h2 {
 
 .environmentQuestions {
    padding-bottom: 0.3em;
-   color: rgba(255,255,255,0.9);
+   color: rgba(0,0,0,0.9);
 }
 
 #firstEnvQ {
@@ -341,6 +324,7 @@ h2 {
 }
 
 .envRight {
+  padding-left: 2rem;
   @include vr-tablet {
     padding-left: 0;
   }
