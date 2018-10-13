@@ -8,6 +8,7 @@
   border-bottom: 1px solid black;
   font-family: 'Futura PT';
   font-weight: 400;
+  color: black;
 }
 
 body {
@@ -163,7 +164,14 @@ h4 {
   flex-grow: 0;
 }
 
-
+.separationLine:before {
+  content: '';
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  border-top: 1px solid black;
+  margin-top: -5rem;
+}
 
 
 

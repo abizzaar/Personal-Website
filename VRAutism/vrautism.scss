@@ -12,7 +12,6 @@ body {
 }
 
 video, img {
-  border: 2px solid rgba(0,0,0,1);
   margin: 0;
 }
 
@@ -53,6 +52,7 @@ h2 {
 .descrProjectLeft {
     padding-top: 0.2rem;
     text-align: right;
+    
 }
 
 .descrProjectRight {
@@ -91,11 +91,11 @@ h2 {
 }
 
 #ourUserContainerVR {
-    margin-top: 8rem;
+    margin-top: 12rem;
     margin-left: 2rem;
     @include phone {
       margin-left: 0;
-      margin-top: 4rem;
+      margin-top: 8rem;
     }
 }
 
@@ -160,7 +160,7 @@ h2 {
 }
 
 #processContainer {
-    margin-top: 8rem;
+    margin-top: 4rem;
     margin-left: 2rem;
     @include phone {
       margin-left: 0;
@@ -203,8 +203,7 @@ h2 {
 
 
 #ethanVRVideo {
-    width: 95%;
-    margin-top: 2em;
+    margin-top: 4rem;
 }
 
 #ourPrototypeContainerVR {
@@ -303,6 +302,9 @@ h2 {
 
 .envLeft {
     padding-left: 0;
+    @include vr-tablet {
+      padding-right: 0;
+    }
 }
 
 .envRight {
@@ -325,10 +327,10 @@ h2 {
 }
 
 .fullSizeVideoBlockVR {
-    padding-top: 6rem;
-    width: 90%;
+    width: 60%;
     display: block;
     margin: auto;
+    margin-top: 6rem;
     @include phone {width: 100%;}
 }
 

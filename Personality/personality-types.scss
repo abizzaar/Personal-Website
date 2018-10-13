@@ -22,12 +22,13 @@ body {
 #resultsContainer {
     margin: auto;
     width: 90%;
-    margin-top: 6rem;
-    margin-bottom: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     @include phone {
       width: 100%;
     }
 }
+
 #resultsHeading {
     font-size: 1.8em;
     margin-bottom: 2rem;

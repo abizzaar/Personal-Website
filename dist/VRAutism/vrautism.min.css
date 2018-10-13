@@ -3,7 +3,6 @@ body {
   margin-bottom: 7%; }
 
 video, img {
-  border: 2px solid black;
   margin: 0; }
 
 .underline {
@@ -61,12 +60,12 @@ h2 {
   padding-bottom: 0; }
 
 #ourUserContainerVR {
-  margin-top: 8rem;
+  margin-top: 12rem;
   margin-left: 2rem; }
   @media only screen and (max-width: 700px) {
     #ourUserContainerVR {
       margin-left: 0;
-      margin-top: 4rem; } }
+      margin-top: 8rem; } }
 
 #ourUserTextContainerVR {
   padding-top: 3%;
@@ -122,7 +121,7 @@ h2 {
       margin-bottom: 2rem; } }
 
 #processContainer {
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-left: 2rem; }
   @media only screen and (max-width: 700px) {
     #processContainer {
@@ -158,8 +157,7 @@ h2 {
   font-size: 0.8em; }
 
 #ethanVRVideo {
-  width: 95%;
-  margin-top: 2em; }
+  margin-top: 4rem; }
 
 #ourPrototypeContainerVR {
   display: block;
@@ -247,6 +245,9 @@ h2 {
 
 .envLeft {
   padding-left: 0; }
+  @media only screen and (max-width: 1000px) {
+    .envLeft {
+      padding-right: 0; } }
 
 .envRight {
   padding-left: 2rem; }
@@ -265,10 +266,10 @@ h2 {
   padding-top: 6rem; }
 
 .fullSizeVideoBlockVR {
-  padding-top: 6rem;
-  width: 90%;
+  width: 60%;
   display: block;
-  margin: auto; }
+  margin: auto;
+  margin-top: 6rem; }
   @media only screen and (max-width: 700px) {
     .fullSizeVideoBlockVR {
       width: 100%; } }

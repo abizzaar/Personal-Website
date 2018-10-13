@@ -56,7 +56,7 @@ body {
 }
 
 #interactivePrototype {
-  margin-top: 8rem;
+  margin-top: 10rem;
   text-align: center;
   font-size: 1.1em;
   @include phone {text-align: left;}
@@ -83,7 +83,7 @@ body {
 
 
 #iphoneContainer {
-  margin: 1rem auto 8rem auto; 
+  margin: 1rem auto 10rem auto; 
   position:relative; 
   width: 18em;
   height: 35.617em;
@@ -233,6 +233,9 @@ body {
 .videoAndDescrMyndContainer {
   margin-top: 8rem;
   @include phone {flex-direction: column-reverse;}
+}
+#videoAndDescrMynd1 {
+  margin-top: 10rem;
 }
 
 .videoMyndUI {

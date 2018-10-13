@@ -5,7 +5,8 @@
   padding-bottom: 6rem;
   border-bottom: 1px solid black;
   font-family: 'Futura PT';
-  font-weight: 400; }
+  font-weight: 400;
+  color: black; }
 
 body {
   font-family: 'Neutraface 2 Text';
@@ -153,6 +154,14 @@ h4 {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0; }
+
+.separationLine:before {
+  content: '';
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  border-top: 1px solid black;
+  margin-top: -5rem; }
 
 /*
 FUTURA PT
