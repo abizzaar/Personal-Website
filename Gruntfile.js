@@ -35,7 +35,6 @@ module.exports = function (grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'dist',
           src: ['dist/**/*.min.css'],
           dest: '',
     }]
