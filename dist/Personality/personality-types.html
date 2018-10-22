@@ -4,12 +4,28 @@
     <link rel="stylesheet" type="text/css" href="../Assets/general.min.css" />
     <link rel="stylesheet" type="text/css" href="personality-types.min.css" />
     <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1" />
-</head>
+    <script src="../Assets/general.js"></script>
+  </head>
 
 <body>
-    <div id="abizarNav" class="headingsFutura" onclick="location.href = '../index.html'">
-        Abizar
+  <div id="abizarNav" class="headingsFutura" >
+    <div onclick="location.href = '../index.html'">Abizar</div>
+      <!-- script to handle click at bottom of document -->
+      <button onclick="toggleNav()" class="hamburger hamburger--emphatic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
+
+  <div id="fullNav" class="fullNav">
+      <div><a onclick="location.href = '../index.html'">Home</a></div>
+      <div><a onclick="location.href = '../ISO/iso.html'">ISO Athletic</a></div>
+      <div><a onclick="window.open('https://abizzaar.github.io/CoCo-Health')">Coco Health</a></div>
+      <div><a onclick="location.href = '../Mynd/mynd.html'">Mynd</a></div>
+      <div><a onclick="location.href = '../VRAutism/vrautism.html'">Multisensory VR experience</a></div>
+      <div><a onclick="location.href = 'personality-types.html'">Personality Types</a></div>
+  </div>
 
     <div class="pageHeading">personality types</div>
     <div class="maxWidthContainer">
@@ -143,6 +159,10 @@
         </div>
     </div>
     </div>
+    
+    <footer>
+      <div>Designed and built by Abizar</div>
+    </footer>
 
 </body>
 

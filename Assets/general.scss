@@ -5,33 +5,56 @@ em {
   font-style: italic;
 }
 
-#fullNav {
+.fullNav {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9;
-  height: 100vh;
+  height: 0;
   width: 100vw;
+  overflow: hidden;
   background-color: white;
-
-  > div {
+  font-weight: 300;
+  > * {
     margin: auto;
     text-align: center;
-    font-size: 3rem;
     margin-top: 2rem;
-    &:first-child {margin-top: 5rem;}
+    font-size: 3rem;
+    @include phone {
+      font-size: 1.8rem;
+      margin-top: 1.5rem;
+    }
+    &:first-child {
+      margin-top: 8rem;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Futura PT';
+    transition: color 1s;
   }
   a:hover {
     cursor: pointer;
+    opacity: 0.4;
   }
 }
+
+.fullNavShown {
+  height: 100vh;
+  a {
+    color: black;
+  }
+}
+
+
 
 .pageHeading {
   padding: 8rem 0 6rem 0;
   text-align: center;
   font-size: 4rem;
   margin-bottom: 6rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0,.3);
   font-family: 'Futura PT';
   font-weight: 400;
   background: rgba(0,0,0,0.05);
@@ -60,7 +83,6 @@ body {
   -moz-text-size-adjust: 100%; 
   -webkit-text-size-adjust: 100%;
   margin: 0 0 0 0;
-  margin-bottom: 5rem;
 }
 
 *::selection {
@@ -78,18 +100,29 @@ body {
 
 #abizarNav {
   position: fixed;
-  margin: 0.3em 0.7em;
-  padding: 0 0.2em;
+  padding: 0.3em 0.9em;
   font-size: 1.5em;
   font-weight: 300;
   top: 0;
-  color: #7A7A7A;
-  cursor: pointer;
+  color: black;
+  > * {
+    cursor: pointer;
+  }
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  button {
+    background: none;
+    background-color: none;
+    border: none;
+    outline: none;
+    @include phone {margin-right: -0.3rem;}
+  }
 }
 
-#abizarNav:hover {
-  color: black;
+#abizarNav > div:hover {
+  color: #7A7A7A;
 }
 
 p {
@@ -206,21 +239,168 @@ h4 {
   flex-grow: 0;
 }
 
+@include phone {
+  .halfSizeMediaContainer {
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+    .halfSizeMedia {
+      width: 100%;
+      margin: auto;
+      &:last-child {
+        margin-top: 6rem;
+      }
+    }
+  }
+}
+
 .separationLine:before {
   content: '';
   width: 100vw;
   position: absolute;
   left: 0;
-  border-top: 1px solid black;
+  border-top: 1px solid rgba(0,0,0,.3);
   margin-top: -5rem;
 }
 
 
+footer {
+  margin-top: 8rem;
+  height: 8rem;
+  width: 100%;
+  background-color: rgba(0,0,0,.85);
+  border-top: 1px solid rgba(0,0,0,.3);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 300;
+  color: rgba(255,255,255,.8);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerText {
+  padding: 0 2rem;
+}
+
+.footerLine {
+  height: 0.1rem;
+  background-color: rgba(255,255,255,.3);;
+  width: 8rem;
+  @media only screen and (max-width: 650px) {display: none;}
+}
 
 
+/* hamburgers from https://jonsuh.com/hamburgers/ */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.4; }
+  .hamburger.is-active:hover {
+    opacity: 0.4; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #000; }
 
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
 
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
 
+/*
+   * Emphatic
+   */
+   .hamburger--emphatic {
+    overflow: hidden; }
+    .hamburger--emphatic .hamburger-inner {
+      transition: background-color 0.125s 0.175s ease-in; }
+      .hamburger--emphatic .hamburger-inner::before {
+        left: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
+      .hamburger--emphatic .hamburger-inner::after {
+        top: 10px;
+        right: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
+    .hamburger--emphatic.is-active .hamburger-inner {
+      transition-delay: 0s;
+      transition-timing-function: ease-out;
+      background-color: transparent !important; }
+      .hamburger--emphatic.is-active .hamburger-inner::before {
+        left: -80px;
+        top: -80px;
+        transform: translate3d(80px, 80px, 0) rotate(45deg);
+        transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      .hamburger--emphatic.is-active .hamburger-inner::after {
+        right: -80px;
+        top: -80px;
+        transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+        transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  
+  /*
+     * Emphatic Reverse
+     */
+  .hamburger--emphatic-r {
+    overflow: hidden; }
+    .hamburger--emphatic-r .hamburger-inner {
+      transition: background-color 0.125s 0.175s ease-in; }
+      .hamburger--emphatic-r .hamburger-inner::before {
+        left: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
+      .hamburger--emphatic-r .hamburger-inner::after {
+        top: 10px;
+        right: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
+    .hamburger--emphatic-r.is-active .hamburger-inner {
+      transition-delay: 0s;
+      transition-timing-function: ease-out;
+      background-color: transparent !important; }
+      .hamburger--emphatic-r.is-active .hamburger-inner::before {
+        left: -80px;
+        top: 80px;
+        transform: translate3d(80px, -80px, 0) rotate(-45deg);
+        transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      .hamburger--emphatic-r.is-active .hamburger-inner::after {
+        right: -80px;
+        top: 80px;
+        transform: translate3d(-80px, -80px, 0) rotate(45deg);
+        transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  
 
 
 
