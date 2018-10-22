@@ -54,7 +54,6 @@ em {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 6rem;
-  border-bottom: 1px solid rgba(0,0,0,.3);
   font-family: 'Futura PT';
   font-weight: 400;
   background: rgba(0,0,0,0.05);
@@ -287,7 +286,7 @@ footer {
 
 .footerLine {
   height: 0.1rem;
-  background-color: rgba(255,255,255,.3);;
+  background-color: rgba(255,255,255,.3);
   width: 8rem;
   @media only screen and (max-width: 650px) {display: none;}
 }

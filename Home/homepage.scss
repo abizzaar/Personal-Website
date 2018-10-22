@@ -22,9 +22,21 @@
 
 #descrOfMe {
   .bpContainer {
-    margin-top: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  a {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
+    background-image: linear-gradient(to right, black 100%, white 0);;
+    background-position: 0 0.96em;
+    background-repeat: repeat-x;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
+
 
 .bulletPoint {
   margin-top: 1rem;
@@ -104,7 +116,7 @@
 }
 
 #githubIcon {
-    margin-left: 0.3rem;
+    margin-left: 0.8rem;
     height: 1em;
     vertical-align: -0.15em;
     opacity: 0.6;
@@ -116,7 +128,7 @@
 }
 
 #behanceIcon {
-    margin-left: 0.3rem;
+    margin-left: 0.8rem;
     height: 1em;
     vertical-align: -0.15em;
     opacity: 0.6;
@@ -125,6 +137,15 @@
 
 #behanceIcon:hover {
     opacity: 1;
+}
+
+#twitterIcon {
+  opacity: 0.6;
+  vertical-align: -0.34em;
+  height: 1.4em;
+  margin-left: 0.6rem;
+  cursor:pointer;
+  &:hover {opacity: 1;}
 }
 
 
