@@ -323,7 +323,46 @@ h2 {
 
 .halfSizeMediaContainer {
   padding-top: 6rem;
+
+  .fullSizeVideo {
+    height: 15rem;
+    @include tablet {
+      height: 13rem;
+    }
+    @media only screen and (max-width: 956px) {
+      height: 11rem;
+    }
+    @include phone {
+      height: auto;
+    }
+  }
 }
+
+/* this whole equal-sized height image thing is broken. please rewrite. */
+.halfSizeMediaContainer:last-child {
+  .halfSizeMedia {
+    height: 18rem;
+    @include tablet {
+      height: 15rem;
+    }
+    @media only screen and (max-width: 956px) {
+      height: 13rem;
+    }
+    @include phone {
+      height: auto;
+    }
+    img {
+      height: 100%;
+      display:block;
+      margin: auto;
+      @include phone {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
 
 .fullSizeVideoBlockVR {
     width: 60%;

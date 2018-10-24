@@ -12,7 +12,7 @@ em {
   z-index: 9;
   height: 0;
   width: 100vw;
-  overflow: hidden;
+  overflow: scroll;
   background-color: white;
   font-weight: 300;
   > * {
@@ -26,6 +26,9 @@ em {
     }
     &:first-child {
       margin-top: 8rem;
+    }
+    &:last-child {
+      margin-bottom: 6rem;
     }
   }
   a {
@@ -116,7 +119,7 @@ body {
     background-color: none;
     border: none;
     outline: none;
-    @include phone {margin-right: -0.3rem;}
+    @include phone {margin-right: -0.9rem;}
   }
 }
 
@@ -268,7 +271,9 @@ footer {
   margin-top: 8rem;
   height: 8rem;
   width: 100%;
-  background-color: rgba(0,0,0,.85);
+  background-image: url("footer.png");
+  background-position: left top;
+  background-size: cover;
   border-top: 1px solid rgba(0,0,0,.3);
   text-align: center;
   padding: 2rem 1rem;
@@ -282,13 +287,6 @@ footer {
 
 .footerText {
   padding: 0 2rem;
-}
-
-.footerLine {
-  height: 0.1rem;
-  background-color: rgba(255,255,255,.1);
-  width: 8rem;
-  @media only screen and (max-width: 650px) {display: none;}
 }
 
 
