@@ -103,7 +103,7 @@ body {
 #abizarNav {
   position: fixed;
   padding: 0.3em 0.9em;
-  @include phone {padding: 0.3em 0.3em 0.3em 0.7em;};
+  @include phone {padding: 0.3em 0.3rem 0.3em 0.7em;};
   font-size: 1.5em;
   font-weight: 300;
   top: 0;
