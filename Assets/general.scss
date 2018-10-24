@@ -103,6 +103,7 @@ body {
 #abizarNav {
   position: fixed;
   padding: 0.3em 0.9em;
+  @include phone {padding: 0.3em 0.3em 0.3em 0.7em;};
   font-size: 1.5em;
   font-weight: 300;
   top: 0;
@@ -119,7 +120,7 @@ body {
     background-color: none;
     border: none;
     outline: none;
-    @include phone {margin-right: -0.9rem;}
+    
   }
 }
 
@@ -224,7 +225,6 @@ h4 {
     width: 100%;
     color: black;
     margin: 0;
-    padding: 0.3em 0.9em;
   }  
 }
 
@@ -271,9 +271,10 @@ footer {
   margin-top: 8rem;
   height: 8rem;
   width: 100%;
+  background-color: black;
   background-image: url("footer.png");
   background-position: left top;
-  background-size: cover;
+  background-size: auto 100%;
   border-top: 1px solid rgba(0,0,0,.3);
   text-align: center;
   padding: 2rem 1rem;
