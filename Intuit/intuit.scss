@@ -3,14 +3,57 @@
 .underline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $pink), color-stop(0, white));
-  background-image: linear-gradient(to right, $pink 100%, white 0);;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $green), color-stop(0, white));
+  background-image: linear-gradient(to right, $green 100%, white 0);;
   background-position: 0 0.85em;
   background-repeat: repeat-x;
 }
 
 #finalDelivHeader {
+  margin-bottom: 1rem;
   @include tablet {
     text-align: left;
+  }
+}
+
+.intuitButtons {
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.clickButton {
+  border: 1px solid black;
+  color: black;
+  height: 2.7rem;
+  width: 16rem;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 1.5rem 0 1.5rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: $green;
+  }
+  &:focus {
+    outline: 1px solid white;
+  }
+}
+
+#conceptVid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  @include phone {
+    width: 100%;
   }
 }

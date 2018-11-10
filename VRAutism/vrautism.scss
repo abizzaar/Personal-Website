@@ -17,8 +17,8 @@ video, img {
 .underline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #DEECFF), color-stop(0, white));
-  background-image: linear-gradient(to right, #DEECFF 100%, white 0);;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $blue), color-stop(0, white));
+  background-image: linear-gradient(to right, $blue 100%, white 0);;
   background-position: 0 0.8em;
   background-repeat: repeat-x;
 }

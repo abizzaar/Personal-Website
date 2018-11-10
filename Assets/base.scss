@@ -1,9 +1,19 @@
 $yellow: #FFF9A9;
 $purple: #E1DFFF;
-$pink: #FAEAFE;
 $light-blue: #DDEEF4;
 $blue: #deecff;
+$pink: #FAEAFE;
+$yellow: #FFF9A9;
+$green: #baf2de;
 
+$projects-list: 
+  $yellow
+  $purple
+  $light-blue
+  $blue
+  $pink
+  $green
+  $yellow;
 
 @mixin tablet {
   @media only screen and (max-width: 1120px) {

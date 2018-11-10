@@ -33,7 +33,7 @@
     background-position: 0 0.96em;
     background-repeat: repeat-x;
     &:hover {
-      opacity: 0.7;
+      background-color: #F0F0F0;
     }
   }
 }
@@ -74,7 +74,7 @@
 }
 
 .homePageUnderline:hover {
-    opacity: 0.7;
+    background-color: #F0F0F0;
 }
 
 
@@ -86,6 +86,18 @@
 .myWorkDescr {
   margin-top: 1.5rem;
   font-weight: 200;
+}
+
+
+.myWorkDescr {
+  @for $i from 1 through length($projects-list) {
+    &:nth-child(#{$i}) {
+      .homePageUnderline:hover {
+        background-color: nth($projects-list, $i);
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .homePageEmphasis {
