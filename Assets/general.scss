@@ -5,6 +5,21 @@ em {
   font-style: italic;
 }
 
+
+/* margin-tops */
+.m-1 { margin-top: 1rem; }
+.m-2 { margin-top: 2rem; }
+.m-3 { margin-top: 3rem; }
+.m-4 { margin-top: 4rem; }
+.m-5 { margin-top: 5rem; }
+.m-6 { margin-top: 6rem; }
+.m-7 { margin-top: 7rem; }
+.m-8 { margin-top: 8rem; }
+.m-9 { margin-top: 9rem; }
+.m-10 { margin-top: 10rem; }
+.m-11 { margin-top: 11rem; }
+
+
 .fullNav {
   position: fixed;
   top: 0;
@@ -39,7 +54,7 @@ em {
   }
   a:hover {
     cursor: pointer;
-    opacity: 0.4;
+    opacity: 0.7;
   }
 }
 
@@ -86,6 +101,12 @@ body {
   -webkit-text-size-adjust: 100%;
   margin: 0 0 0 0;
 }
+
+
+.centerText {
+  text-align: center;
+}
+
 
 *::selection {
   background-color: rgba(0,0,0,0.08);
@@ -227,6 +248,8 @@ h4 {
     margin: 0;
   }  
 }
+
+
 
 
 .halfSizeMediaContainer {

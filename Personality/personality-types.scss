@@ -5,8 +5,8 @@
 .redUnderline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #FAEAFE), color-stop(0, white));
-  background-image: linear-gradient(to right, #FAEAFE 100%, white 0);;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $pink), color-stop(0, white));
+  background-image: linear-gradient(to right, $pink 100%, white 0);;
   background-position: 0 0.85em;
   background-repeat: repeat-x;
 }

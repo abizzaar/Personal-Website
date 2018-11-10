@@ -49,8 +49,8 @@ body {
 .blueUnderline {
   padding-left: 0.2em;
   padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #DDEEF4), color-stop(0, white));
-  background-image: linear-gradient(to right, #DDEEF4 100%, white 0);;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $light-blue), color-stop(0, white));
+  background-image: linear-gradient(to right, $light-blue 100%, white 0);;
   background-position: 0 0.8em;
   background-repeat: repeat-x;
 }
@@ -195,7 +195,7 @@ body {
   display: inline-block;
   height: 3em;
   width: 3em;
-  background-color: #DDEEF4;
+  background-color: $light-blue;
   border-radius: 50%;
   margin: auto;
 }
@@ -281,7 +281,7 @@ body {
 .bulletPoint {
   height: 0.8em;
   width: 0.8em;
-  background-color: #DDEEF4;
+  background-color: $light-blue;
   border-radius: 50%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
