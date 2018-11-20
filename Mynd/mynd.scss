@@ -1,8 +1,6 @@
 @import '../Assets/base';
 
 body {
-  color: #081B50;
-  font-family: 'Neutraface 2 Text';
   font-weight: 200;
 }
 
@@ -31,7 +29,6 @@ body {
   display: table;
   margin: auto;
   position: relative;
-  font-family: 'Futura PT';
   font-size: 10em;
   text-align: center;
   margin-top: 10rem;
@@ -47,6 +44,7 @@ body {
 
 
 .blueUnderline {
+  margin-left: -0.2em;
   padding-left: 0.2em;
   padding-right: 0.2em;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $light-blue), color-stop(0, white));
@@ -201,9 +199,9 @@ body {
 }
 
 .colorDotCode {
-  font-family: 'Iosevka';
   font-weight: 100;
   font-size: 0.8em;
+  color: rgba(0,0,0,0.5);
   margin: 0.8em auto 0 auto;
 }
 
@@ -220,8 +218,9 @@ body {
 
 #robotoFont {
   display: block;
-  font-family: 'Roboto';
-  font-size: 3em;
+  font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", 
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 2em;
   font-weight: 200;
   @include phone {
     margin-top: 0.2rem;
@@ -288,11 +287,10 @@ body {
 }
 
 .headingInBulletPointContainer {
-  width: 4em;
+  width: 5em;
   padding-left: 0.5em;
 }
 
 .textInBulletPointContainer {
   padding-left: 2em;
-  @include tablet {padding-left: 1em;}
 }

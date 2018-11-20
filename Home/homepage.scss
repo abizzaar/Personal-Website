@@ -1,14 +1,13 @@
 @import '../Assets/base';
-
+/* 
 .greyUnderline {
-  padding-left: 0.2em;
   padding-right: 0.2em;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #F0F0F0), color-stop(0, white));
   background-image: linear-gradient(to right, #F0F0F0 100%, white 0);;
-  background-position: 0 0.85em;
+  background-position: 0 0.8em;
   background-repeat: repeat-x;
 }
-
+ */
 #abizarCoverPhoto {
     width: 100%;
     display: block;
@@ -17,7 +16,6 @@
 
 
 #titleDescrOfMe {
-    margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -25,17 +23,22 @@
   .bpContainer {
     margin-top: 1rem;
   }
+}
 
-  a {
-    cursor: pointer;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
-    background-image: linear-gradient(to right, black 100%, white 0);;
-    background-position: 0 0.96em;
-    background-repeat: repeat-x;
-    &:hover {
-      background-color: #F0F0F0;
-    }
+
+.homePageLink {
+  transition: all .2s ease-in;
+  &:hover {
+    background-color: #F0F0F0;
   }
+}
+
+a {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
+  background-image: linear-gradient(to right, black 100%, white 0);;
+  background-position: 0 20px;
+  background-repeat: repeat-x;
 }
 
 
@@ -57,11 +60,12 @@
 }
 
 #emailAbizar {
-    color: black;
+    color: #535a5f;
     text-decoration: none;
 }
 
 .resume {
+  margin-top: 0.5rem;
     text-align: right;
 }
 
@@ -69,39 +73,48 @@
     cursor: pointer;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
     background-image: linear-gradient(to right, black 100%, white 0);;
-    background-position: 0 0.95em;
+    background-position: 0 20px;
     background-repeat: repeat-x;
 }
 
-.homePageUnderline:hover {
-    background-color: #F0F0F0;
-}
 
 
 #myWorkTitle {
-    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 
 .myWorkDescr {
   margin-top: 1.5rem;
   font-weight: 200;
+  transition: all .4s ease-in;
+  cursor: pointer;
+
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 1rem 1rem 1rem 1rem;
+
+  .bulletPoint {
+    display: none;
+  }
+  
+}
+.bulletPoint {
+  display: none;
 }
 
-
-.myWorkDescr {
+.myWorkDescr:hover {
   @for $i from 1 through length($projects-list) {
-    &:nth-child(#{$i}) {
-      .homePageUnderline:hover {
+    &:nth-child(#{$i})  {
         background-color: nth($projects-list, $i);
         opacity: 1;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
       }
-    }
   }
 }
 
+
 .homePageEmphasis {
-  font-weight: 300;
+  font-weight: 500;
+  color: black;
 }
 
 #keepCheckingBack {
@@ -124,9 +137,6 @@
     cursor:pointer;
 }
 
-#linkedInText:hover {
-    opacity: 1;
-}
 
 #githubIcon {
     margin-left: 0.8rem;
@@ -136,8 +146,11 @@
     cursor:pointer;
 }
 
-#githubIcon:hover {
-    opacity: 1;
+#githubIcon, #behanceIcon, #twitterIcon, #linkedInText {
+    transition: all .4s ease-in;
+    &:hover {
+      opacity: 1;
+    }
 }
 
 #behanceIcon {
@@ -148,17 +161,12 @@
     cursor:pointer;
 }
 
-#behanceIcon:hover {
-    opacity: 1;
-}
-
 #twitterIcon {
   opacity: 0.6;
   vertical-align: -0.34em;
   height: 1.4em;
   margin-left: 0.6rem;
   cursor:pointer;
-  &:hover {opacity: 1;}
 }
 
 
@@ -182,7 +190,7 @@
   }
 
   .email {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 0.5rem;
   }
 
@@ -191,10 +199,14 @@
   }
 
   #personalMediaIcons {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .myWorkDescr {
     margin-top: 2rem;
+  }
+
+  footer {
+    margin-top: 6rem;
   }
 }

@@ -17,7 +17,6 @@
           </span>
         </button>
     </div>
-
     <div id="fullNav" class="fullNav">
         <div><a onclick="location.href = 'index.html'">Home</a></div>
         <div><a onclick="location.href = 'ISO/iso.html'">ISO Athletic</a></div>
@@ -32,28 +31,87 @@
   <div class="maxWidthContainer">
     <img src="Home/Media/abizar cover photo.jpg" id="abizarCoverPhoto">
 
-    <h1 id="titleDescrOfMe">
-        <span class="greyUnderline">I'm Abizar.<br></span>
-        <span class="greyUnderline">I make functionally beautiful designs with beautifully functional code.</span>
+    <h1 id="titleDescrOfMe" class="m-4">
+        <span class="greyUnderline">I am a designer and developer studying Computer Science and Design at Northwestern University.</span>
     </h1>
 
     <p id="descrOfMe">
-      <span class="bpContainer"><span class="bulletPoint"></span> <span>I study Computer Science and Design at Northwestern University,
-      focusing on full-stack development and product design.<br></span></span>
       <span class="bpContainer"><span class="bulletPoint"></span> <span> My strengths lie in bringing
-        digital products to life, overseeing the research, design and development. I have experience
-        delivering functional products to real-world clients.<br></span></span>
+          digital products to life, overseeing the research, design and development. I have experience
+          delivering functional products to real-world clients.<br></span></span>
+      <span class="bpContainer"><span class="bulletPoint"></span> <span>I am currently focusing
+        on becoming a better full-stack developer and product designer.<br></span></span>
       <span class="bpContainer"><span class="bulletPoint"></span> <span>
         In my free time I read, write and travel.
-        You can find my code on <a class="homePageUnderline yellowBackground" onclick="window.open('https://github.com/abizzaar')">Github</a>,
-        photography on <a class="homePageUnderline yellowBackground" onclick="window.open('https://www.behance.net/abizarbaga5b18')">Behance</a>, 
-        and professional journey on <a class="homePageUnderline yellowBackground" onclick="window.open('https://www.linkedin.com/in/abizar-bagasrawala-82774a11b/')">LinkedIn</a>. 
+        You can find my code on <a class="homePageLink yellowBackground" onclick="window.open('https://github.com/abizzaar')">Github</a>,
+        photography on <a class="homePageLink yellowBackground" onclick="window.open('https://www.behance.net/abizarbaga5b18')">Behance</a>, 
+        and professional journey on <a class="homePageLink yellowBackground" onclick="window.open('https://www.linkedin.com/in/abizar-bagasrawala-82774a11b/')">LinkedIn</a>. 
       </span></span>  
       
     </p>
 
+    <h1 id="myWorkTitle" class="separationLine m-11">
+        <span class="greyUnderline">My work (newest first)</span>
+    </h1>
+
+    <div class="myWorkContainer">
+    <p class="myWorkDescr" onclick="location.href = 'ISO/iso.html'">
+      <span class="bpContainer"><span class="bulletPoint"></span>
+      <span><a class="homePageEmphasis" >
+          ISO Athletic<br></a><span>
+          UI/UX design and front-end development for a sports analytics company
+      </span></span></span>
+  </p>
+
+    <p class="myWorkDescr" onclick="location.href = 'CocoHealth/cocohealth.html'">
+      <span class="bpContainer"><span class="bulletPoint"></span>
+      <span><span class="homePageUnderline homePageEmphasis yellowBackground" >
+          CoCo Health<br></span><span>
+          a freelance branding, design and website development project for a counseling startup
+      </span></span></span>
+  </p>
+
+    <p class="myWorkDescr"  onclick="location.href = 'Mynd/mynd.html'">
+        <span class="bpContainer"><span class="bulletPoint"></span>
+        <span><span class="homePageUnderline homePageEmphasis">
+             Mynd<br></span><span>
+            an online diary for emotion management designed as a mobile web app
+        </span></span></span>
+    </p>
+
+    <p class="myWorkDescr" onclick="location.href = 'VRAutism/vrautism.html'">
+        <span class="bpContainer"><span class="bulletPoint"></span>
+        <span><span class="homePageUnderline homePageEmphasis">
+             Multisensory VR experience<br></span><span>
+            an exploration of using technology for autism therapy
+        </span></span></span>
+    </p>
+
+    <p class="myWorkDescr" onclick="location.href = 'Personality/personality-types.html'">
+        <span class="bpContainer"><span class="bulletPoint"></span>
+        <span><span class="homePageUnderline homePageEmphasis" >
+             Personality Types<br></span><span>
+            an exploration of machine learning and natural language processing (NLP)
+        </span></span></span>
+    </p>
+    <p class="myWorkDescr" onclick="location.href = 'Intuit/intuit.html'">
+        <span class="bpContainer"><span class="bulletPoint"></span>
+        <span><span class="homePageUnderline homePageEmphasis">
+             Intuit + Northwestern<br></span><span>
+            a collaboration with Intuit Design Team to create new financial service offerings
+        </span></span></span>
+    </p>
+    <p class="myWorkDescr" onclick="location.href = 'IDEO/ideo.html'">
+        <span class="bpContainer"><span class="bulletPoint"></span>
+        <span><span class="homePageUnderline homePageEmphasis">
+             IDEO Colab Makeathon<br></span><span>
+            design concept of a cryptocurrency wristband for children
+        </span></span></span>
+    </p>
+
+  
     <p class="email">
-        <a id="emailAbizar" class="homePageUnderline  yellowBackground" href="mailto:abizar@u.northwestern.edu">
+        <a id="emailAbizar" class="homePageLink yellowBackground" href="mailto:abizar@u.northwestern.edu">
             Email</a><span> me if you'd like to get in touch.</span>
     </p>
 
@@ -63,7 +121,7 @@
         <span>
             Here's my
         </span>
-        <a id="resumeAbizar" class="homePageUnderline  yellowBackground" onclick="window.open('Home/Media/resume.pdf')">
+        <a id="resumeAbizar" class="homePageLink yellowBackground" onclick="window.open('Home/Media/resume.pdf')">
             resume</a><span>.</span>
     </p>
 
@@ -73,73 +131,8 @@
         <img id="behanceIcon" class="githubBehanceIcons" src="Home/Media/behance.png" onclick="window.open('https://www.behance.net/abizarbaga5b18')">
         <img id="twitterIcon" src="Home/Media/twitter.svg" onclick="window.open('https://twitter.com/abizzaar')">
     </div>
-
-
-    <h1 id="myWorkTitle">
-        <span class="greyUnderline">My work (newest first)</span>
-    </h1>
-
-    <div class="myWorkContainer">
-    <p class="myWorkDescr">
-      <span class="bpContainer"><span class="bulletPoint"></span>
-      <span><a class="homePageUnderline homePageEmphasis" onclick="location.href = 'ISO/iso.html'">
-           ISO Athletic</a><span>
-          : UI/UX design and front-end development for a sports analytics company
-      </span></span></span>
-  </p>
-
-    <p class="myWorkDescr">
-      <span class="bpContainer"><span class="bulletPoint"></span>
-      <span><span class="homePageUnderline homePageEmphasis yellowBackground" onclick="location.href = 'CocoHealth/cocohealth.html'">
-           CoCo Health</span><span>
-          : a freelance branding, design and website development project for a counseling startup
-      </span></span></span>
-  </p>
-
-    <p class="myWorkDescr">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis" onclick="location.href = 'Mynd/mynd.html'">
-             Mynd</span><span>
-            : an online diary for emotion management designed as a mobile web app
-        </span></span></span>
-    </p>
-
-    <p class="myWorkDescr">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis" onclick="location.href = 'VRAutism/vrautism.html'">
-             Multisensory VR experience</span><span>
-            : an exploration of using technology for autism therapy
-        </span></span></span>
-    </p>
-
-    <p class="myWorkDescr">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis" onclick="location.href = 'Personality/personality-types.html'">
-             Personality Types</span><span>
-            : an exploration of machine learning and natural language processing (NLP)
-        </span></span></span>
-    </p>
-    <p class="myWorkDescr">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis" onclick="location.href = 'Intuit/intuit.html'">
-             Intuit + Northwestern</span><span>
-            : a collaboration with Intuit Design Team to create new financial service offerings
-        </span></span></span>
-    </p>
-    <p class="myWorkDescr">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis" onclick="location.href = 'IDEO/ideo.html'">
-             IDEO Colab Makeathon</span><span>
-            : design concept of a cryptocurrency wristband for children
-        </span></span></span>
-    </p>
-
-  </div>
-    <p id="keepCheckingBack">
-        Keep checking back as I upload more of my projects.
-    </p>
-  </div>
-
+    </div>
+    </div>
   <footer>
     <div class="footerText">Designed and built by Abizar</div>
   </footer>

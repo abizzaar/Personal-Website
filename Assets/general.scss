@@ -6,6 +6,11 @@ em {
 }
 
 
+p, h1, h2, h3, h4, * {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", 
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /* margin-tops */
 .m-1 { margin-top: 1rem; }
 .m-2 { margin-top: 2rem; }
@@ -23,7 +28,8 @@ em {
 .fullNav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9;
   height: 0;
   width: 100vw;
@@ -31,13 +37,19 @@ em {
   background-color: white;
   font-weight: 300;
   > * {
+    max-width: 1020px;
     margin: auto;
-    text-align: center;
+    text-align: left;
     margin-top: 2rem;
     font-size: 2.7rem;
+    @include tablet {
+      margin-left: 1.9rem;
+    }
     @include phone {
       font-size: 1.7rem;
       margin-top: 1.5rem;
+      text-align: left;
+      margin-left: 1.4rem;
     }
     &:first-child {
       margin-top: 6rem;
@@ -49,8 +61,8 @@ em {
   a {
     color: white;
     text-decoration: none;
-    font-family: 'Futura PT';
     transition: color 1s;
+    background-image: none !important;
   }
   div:nth-child(1) a:hover {
     cursor: pointer;
@@ -78,12 +90,15 @@ em {
 .pageHeading {
   padding: 8rem 0 6rem 0;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.7rem;
+  @include phone {
+    font-size: 2.3rem;
+  }
   margin-bottom: 6rem;
-  font-family: 'Futura PT';
-  font-weight: 400;
+  font-weight: 500;
   background: rgba(0,0,0,0.05);
   color: rgba(0,0,0,0.9);
+  text-transform: capitalize;
   //background: black;
 }
 
@@ -101,7 +116,7 @@ em {
 }
 
 body {
-  font-family: 'Neutraface 2 Text';
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 125%;
   text-size-adjust: 100%; 
   -ms-text-size-adjust: 100%; 
@@ -124,10 +139,6 @@ body {
   box-sizing: border-box;
 }
 
-
-.headingsFutura {
-  font-family: 'Futura PT';
-}
 
 #abizarNav {
   position: fixed;
@@ -157,42 +168,39 @@ body {
   color: #7A7A7A;
 }
 
+
 p {
-  font-family: 'Neutraface 2 Text';
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.7;
   margin: 0;
-  font-size: 100%;
+  font-size: 88%;
+  color: #535a5f;
 }
 
 h1 {
-  font-size: 1.7em;
-  font-family: 'Futura PT';
-  font-weight: 400;
-  color: #4C4C4C; /*rgba(0,0,0,0.7); */
+  font-size: 1.5em;
+  font-weight: 500;
+  color: rgba(0,0,0,1); /*rgba(0,0,0,0.7); */
   margin: 0 0 0 0;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.5em;
-  font-weight: 400;
-  font-family: 'Futura PT';
+  font-size: 1.25em;
+  font-weight: 500;
   margin: 0 0 0 0;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
-  font-family: 'Futura PT';
   margin: 0 0 0 0;
 }
 
 h4 {
-  font-size: 1.2em;
-  font-weight: 400;
-  font-family: 'Futura PT';
+  font-size: 1em;
+  font-weight: 500;
   margin: 0 0 0 0;
 }
 
@@ -200,6 +208,7 @@ h4 {
   box-sizing: border-box;
   padding-right: 4rem;
   float: left;
+  margin-top : 0.2rem;
   width: 40%;
   text-align: right;
   @include phone {
@@ -311,7 +320,7 @@ footer {
   padding: 2rem 1rem;
   font-weight: 300;
   color: rgba(255,255,255,.7);
-  font-size: 1.2rem;
+  font-size: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,6 +328,8 @@ footer {
 
 .footerText {
   padding: 0 2rem;
+  font-size: 110%;
+  font-weight: 400;
 }
 
 
@@ -431,198 +442,3 @@ footer {
         transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
   
 
-
-
-/*
-FUTURA PT
-*/
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTBold.otf') format('opentype');
-    font-weight: 700;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTBoldOblique.otf') format('opentype');
-    font-weight: 700;
-    font-style: oblique;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTBook.otf') format('opentype');
-    font-weight: 300;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTBookOblique.otf') format('opentype');
-    font-weight: 300;
-    font-style: oblique;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTDemi.otf') format('opentype');
-    font-weight: 500;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTDemiOblique.otf') format('opentype');
-    font-weight: 500;
-    font-style: oblique;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTExtraBold.otf') format('opentype');
-    font-weight: 800;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTExtraBoldOblique.otf') format('opentype');
-    font-weight: 800;
-    font-style: oblique;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTHeavy.otf') format('opentype');
-    font-weight: 600;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTHeavyOblique.otf') format('opentype');
-    font-weight: 600;
-    font-style: oblique;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTLight.otf') format('opentype');
-    font-weight: 200;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTLightOblique.otf') format('opentype');
-    font-weight: 200;
-    font-style: oblique;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTMedium.otf') format('opentype');
-    font-weight: 400;
-  }
-
-  @font-face {
-    font-family: 'Futura PT';
-    src: url('fonts/FuturaPTMediumOblique.otf') format('opentype');
-    font-weight: 400;
-    font-style: oblique;
-  }
-
-/*
-    NEUTRAFACE 2 TEXT
-*/
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Light.otf') format('opentype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-LightItalic.otf') format('opentype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Book.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-BookItalic.otf') format('opentype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Demi.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-DemiItalic.otf') format('opentype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'Neutraface 2 Text';
-    src: url('fonts/Neutraface2Text-BoldItalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-  font-family: 'Myriad Pro';
-    src: url('fonts/MyriadPro-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* ROBOTO */
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Light.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-
-/* IOSEVKA */
-
-@font-face {
-  font-family: 'Iosevka';
-  src: url('fonts/iosevka-extralight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
