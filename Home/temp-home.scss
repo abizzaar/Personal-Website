@@ -20,15 +20,12 @@ body {
   transform: translateY(-50%) translateX(-50%);
   margin: auto;
   font-size: 26px;
-  @include phone {
-    width: 70%;
-    top: 40%;
-  }
   font-weight: 400;
 }
 
 header {
   font-family: 'Shadows Into Light Two', cursive;
+  margin: auto;
 }
 
 
@@ -36,8 +33,7 @@ header {
     margin: auto;
     margin-top: 4rem;
     display: flex;
-    width: 300px;
-    @include phone { width: 240px}
+    width: 250px;
     justify-content: space-between;
     align-items: center;
 }
