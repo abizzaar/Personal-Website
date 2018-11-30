@@ -23,13 +23,14 @@ header {
   font-size: 26px;
   @include phone {
     width: 70%;
+    top: 40%;
   }
   font-weight: 400;
 }
 
 
 #personalMediaIcons {
-    position: fixed;
+    position: absolute;
     top: 100vh;
     transform: translateY(-300%) translateX(-50%);
     @include phone {
