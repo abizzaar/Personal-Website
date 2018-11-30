@@ -1,0 +1,64 @@
+@import '../Assets/base';
+
+#personalMediaIcons {
+  text-align: center;
+}
+
+*::selection {
+  background-color: rgba(255,255,255,0.3);
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  color: white;
+  font-family: 'Shadows Into Light Two', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  font-size: 26px;
+  @include phone {
+    width: 70%;
+  }
+  font-weight: 400;
+}
+
+
+#personalMediaIcons {
+    position: fixed;
+    top: 100vh;
+    transform: translateY(-300%) translateX(-50%);
+    @include phone {
+      transform: translateY(-200%) translateX(-50%);
+    }
+    left: 50%;
+    margin: auto;
+    margin-top: 0.7rem;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#personalMediaIcons > svg {
+  opacity: 1;
+  height: 30px;
+  transition: all .3s ease-in;
+  cursor: pointer;
+  fill: white;
+}
+
+#personalMediaIcons > svg:hover {
+  opacity: 0.6;
+}
+
+#personalMediaIcons {
+  > svg:nth-child(4) {
+    height: 40px;
+  }
+  
+}
