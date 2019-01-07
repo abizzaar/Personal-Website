@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="Assets/general.min.css" />
     <link rel="stylesheet" type="text/css" href="Home/homepage.min.css" />
+    <link rel="stylesheet" type="text/css" href="Home/UI-Card-master/card.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1" />
     <script src="Assets/general.js"></script>
 </head>
@@ -28,11 +30,12 @@
         <div><a onclick="location.href = 'IDEO/ideo.html'">IDEO Colab Makeathon</a></div>
     </div>
 
-  <div class="maxWidthContainer">
-    <img src="Home/Media/abizar cover photo.jpg" id="abizarCoverPhoto">
-
-    <h1 id="titleDescrOfMe" class="m-4">
-        <span class="greyUnderline">I am a designer and developer studying Computer Science and Design at Northwestern University.</span>
+    <div class="outer-flex-home">
+<div class="flex-home">
+    <img src="Home/Media/abi.png" id="abizarCoverPhoto">
+      <div class="flex-home-p">
+    <h1 id="titleDescrOfMe">
+        <span class="greyUnderline">Abizar Bagasrawala</span>
     </h1>
 
     <p id="descrOfMe">
@@ -49,68 +52,102 @@
       </span></span>  
       
     </p>
+    </div>
+  </div>
+</div>
 
-    <h1 id="myWorkTitle" class="separationLine m-11">
-        <span class="greyUnderline">My work (newest first)</span>
+  <div class="maxWidthContainer">
+    <h1 id="myWorkTitle" class="m-3">
+        <span class="greyUnderline">My work</span>
     </h1>
 
     <div class="myWorkContainer">
-    <p class="myWorkDescr" onclick="location.href = 'ISO/iso.html'">
-      <span class="bpContainer"><span class="bulletPoint"></span>
-      <span><a class="homePageEmphasis" >
-          ISO Athletic<br></a><span>
-          UI/UX design and front-end development for a sports analytics company
-      </span></span></span>
-  </p>
-
-    <p class="myWorkDescr" onclick="location.href = 'CocoHealth/cocohealth.html'">
-      <span class="bpContainer"><span class="bulletPoint"></span>
-      <span><span class="homePageUnderline homePageEmphasis yellowBackground" >
-          CoCo Health<br></span><span>
-          a freelance branding, design and website development project for a counseling startup
-      </span></span></span>
-  </p>
-
-    <p class="myWorkDescr"  onclick="location.href = 'Mynd/mynd.html'">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis">
-             Mynd<br></span><span>
-            an online diary for emotion management designed as a mobile web app
-        </span></span></span>
-    </p>
-
-    <p class="myWorkDescr" onclick="location.href = 'VRAutism/vrautism.html'">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis">
-             Multisensory VR experience<br></span><span>
-            an exploration of using technology for autism therapy
-        </span></span></span>
-    </p>
-
-    <p class="myWorkDescr" onclick="location.href = 'Personality/personality-types.html'">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis" >
-             Personality Types<br></span><span>
-            an exploration of machine learning and natural language processing (NLP)
-        </span></span></span>
-    </p>
-    <p class="myWorkDescr" onclick="location.href = 'Intuit/intuit.html'">
-        <span class="bpContainer"><span class="bulletPoint"></span>
-        <span><span class="homePageUnderline homePageEmphasis">
-             Intuit + Northwestern<br></span><span>
-            a collaboration with Intuit Design Team to create new financial service offerings
-        </span></span></span>
-    </p>
+    <!-- 
     <p class="myWorkDescr" onclick="location.href = 'IDEO/ideo.html'">
         <span class="bpContainer"><span class="bulletPoint"></span>
         <span><span class="homePageUnderline homePageEmphasis">
              IDEO Colab Makeathon<br></span><span>
             design concept of a cryptocurrency wristband for children
         </span></span></span>
-    </p>
+    </p> -->
 
-  
-    <p class="email">
+    <!--- -->
+    <div class="ui three stackable link cards">
+      <a class="fluid card" href='ISO/iso.html'>
+        <div class="image"> 
+          <img src="Assets/mock-iso.jpg">
+        </div>
+        <div class="content">
+          <div class="header">ISO Athletic</div>
+          <div class="meta">
+            <div>April 2018 - Present</div>
+          </div>
+          <div class="description">
+              UI/UX design and front-end development for a sports analytics company
+          </div>
+        </div>
+      </a>
+      <a class="fluid card" href='CocoHealth/cocohealth.html'>
+        <div class="image"> 
+          <img src="Assets/mock-coco-2.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Coco Health</div>
+          <div class="meta">
+            <div>April 2018 - September 2018</div>
+          </div>
+          <div class="description">
+            A freelance branding, design and website development project for a counseling startup
+          </div>
+        </div>
+      </a>
+      <a class="fluid card" href='Mynd/mynd.html'>
+        <div class="image">  
+          <img src="Assets/mock-mynd-2.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Mynd</div>
+          <div class="meta">
+            <div>Fall 2017</div>
+          </div>
+          <div class="description">
+            An online diary for emotion management designed as a mobile web app
+          </div>
+        </div>
+      </a>
+      <a class="fluid card" href='Intuit/intuit.html'>
+        <div class="image">
+          <img src="Assets/mock-intuit.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Intuit + Northwestern</div>
+          <div class="meta">
+            <div>Winter 2018</div>
+          </div>
+          <div class="description">
+            A collaboration with Intuit Design to create new financial offerings
+          </div>
+        </div>
+      </a>
+      <a class="fluid card" href='VRAutism/vrautism.html'>
+        <div class="image">  
+          <img src="Assets/mock-vr.png">
+        </div>
+        <div class="content">
+          <div class="header">Multisensory VR Autism</div>
+          <div class="meta">
+            <div>Spring 2017</div>
+          </div>
+          <div class="description">
+            An exploration of using technology for autism therapy
+          </div>
+        </div>
+      </a>
+      
+     
+    </div>
+
+    <!-- <p class="email">
         <a id="emailAbizar" class="homePageLink yellowBackground" href="mailto:abizar@u.northwestern.edu">
             Email</a><span> me if you'd like to get in touch.</span>
     </p>
@@ -130,7 +167,7 @@
         <img id="githubIcon" src="Home/Media/github.png" onclick="window.open('https://github.com/abizzaar')">
         <img id="behanceIcon" class="githubBehanceIcons" src="Home/Media/behance.png" onclick="window.open('https://www.behance.net/abizarbaga5b18')">
         <img id="twitterIcon" src="Home/Media/twitter.svg" onclick="window.open('https://twitter.com/abizzaar')">
-    </div>
+    </div> -->
     </div>
     </div>
   <footer>

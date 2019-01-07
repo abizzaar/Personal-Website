@@ -1,4 +1,42 @@
 @import '../Assets/base';
+
+.card {
+  .content {
+    
+    .header {
+      font-size: 1.2rem !important;
+      font-family: "Roboto" !important;
+      font-weight: 500 !important;
+    }
+    .meta {
+      margin-top: 0.4rem;
+      font-size: 1.1rem !important;
+      font-family: "Roboto", sans-serif;
+      color: rgba(0,0,0,0.3) !important;
+    }
+    .description {
+      margin-top: 0.8rem !important;
+      font-size: 88%;
+      color: #535a5f !important;
+      font-weight: 300 !important;
+      font-family: "Roboto" !important;
+    }
+  }
+
+  
+
+}
+
+.ui.two.cards {
+  @include phone {
+    margin-right: -0.8em !important;
+  }
+}
+
+
+
+
+
 /* 
 .greyUnderline {
   padding-right: 0.2em;
@@ -8,10 +46,46 @@
   background-repeat: repeat-x;
 }
  */
+
+ .outer-flex-home {
+
+
+  background: rgba(0,0,0,0.05);
+
+ }
+
+ .flex-home {
+  max-width: 1020px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    flex-direction: column;    
+  }
+  @include phone {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+ }
+
 #abizarCoverPhoto {
-    width: 100%;
+    width: 18rem;
     display: block;
-    margin-top: 5rem;
+    margin-right: 3rem;
+    @include tablet {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
 }
 
 
@@ -33,7 +107,7 @@
   }
 }
 
-a {
+.homePageLink {
   cursor: pointer;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
   background-image: linear-gradient(to right, black 100%, white 0);;
@@ -41,6 +115,9 @@ a {
   background-repeat: repeat-x;
 }
 
+a {
+  text-decoration: none;
+}
 
 .bulletPoint {
   margin-top: 1rem;
@@ -81,6 +158,9 @@ a {
 
 #myWorkTitle {
     margin-bottom: 1rem;
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
 }
 
 .myWorkDescr {
@@ -172,18 +252,10 @@ a {
 
 /* next breakpoints in specific classes later */
 @include tablet {
-  #abizarCoverPhoto {
-    width: calc(100% + 6rem);
-    margin-left: -3rem;
-    margin-top: 3.5rem;
-  }
 }
 
 @include phone {
-  #abizarCoverPhoto {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-  }
+  
 
   .email, .resume, #personalMediaIcons, #keepCheckingBack {
     text-align: left;

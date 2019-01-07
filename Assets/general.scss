@@ -7,8 +7,7 @@ em {
 
 
 p, h1, h2, h3, h4, * {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", 
-  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", sans-serif;
 }
 
 /* margin-tops */
@@ -116,7 +115,7 @@ p, h1, h2, h3, h4, * {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", sans-serif;
   font-size: 125%;
   text-size-adjust: 100%; 
   -ms-text-size-adjust: 100%; 
@@ -141,6 +140,8 @@ body {
 
 
 #abizarNav {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background: white;
   position: fixed;
   padding: 0.3em 0.9em;
   @include phone {padding: 0.3em 0.3rem 0.3em 0.7em;};
@@ -170,7 +171,7 @@ body {
 
 
 p {
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.7;
   margin: 0;
   font-size: 88%;
@@ -178,7 +179,7 @@ p {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 500;
   color: rgba(0,0,0,1); /*rgba(0,0,0,0.7); */
   margin: 0 0 0 0;
@@ -259,8 +260,7 @@ h4 {
 @media only screen and (max-width: 1300px) {
   #abizarNav {
     background: white;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    width: 100%;
+    width: calc(100%-2px);
     color: black;
     margin: 0;
   }  
