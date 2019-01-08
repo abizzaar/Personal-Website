@@ -385,19 +385,20 @@ h4 {
     transition: all 0.3s;
   }
 
-  p {
+  .icon-text {
     color: rgba(0,0,0,0.8);
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.08rem;
     margin-top: 0.1rem;
     transition: all 0.3s;
+    line-height: 1.7rem;
   }
 
   &:hover {
     cursor: pointer;
     i {color: $hover-blue;}
-    p {color: $hover-blue;}
+    .icon-text {color: $hover-blue;}
   }
 }
 
