@@ -2,8 +2,16 @@
 
 body {
   font-weight: 200;
+  overflow-x: hidden;
 }
 
+.underline:after {
+  background: $light-blue;
+}
+
+.strike:before {
+  background: $light-blue;
+}
 
 .rslider {
   z-index:1;
@@ -42,16 +50,6 @@ body {
   }
 }
 
-
-.blueUnderline {
-  margin-left: -0.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $light-blue), color-stop(0, white));
-  background-image: linear-gradient(to right, $light-blue 100%, white 0);;
-  background-position: 0 0.8em;
-  background-repeat: repeat-x;
-}
 
 #interactivePrototype {
   margin-top: 10rem;

@@ -5,6 +5,46 @@ em {
   font-style: italic;
 }
 
+a {
+  color: inherit;
+}
+.strike {
+  position: relative;
+  z-index: 1;
+  &:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    width: calc(100% + 2rem);
+    height: 0.5rem;
+    transform: translateY(-50%);
+  }
+}
+
+.underline {
+  margin-left: -0.21em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-0.4rem);
+    width: 100%;
+    height: 0.3rem;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  //background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $yellow), color-stop(0, white));
+  //background-image: linear-gradient(to right, $yellow 100%, white 0);;
+  //background-position: 0 0.85em;
+  //background-repeat: repeat-x;
+}
 
 p, h1, h2, h3, h4, * {
   font-family: "Roboto", sans-serif;
@@ -84,21 +124,28 @@ p, h1, h2, h3, h4, * {
   }
 }
 
-
+.pageDisplay {
+  width: 100%;
+  display: block;
+  margin: 3rem auto 0 auto;
+}
 
 .pageHeading {
-  padding: 8rem 0 6rem 0;
+  padding-top: 5rem;
   text-align: center;
-  font-size: 2.7rem;
-  @include phone {
-    font-size: 2.3rem;
-  }
-  margin-bottom: 6rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
   font-weight: 500;
-  background: rgba(0,0,0,0.05);
   color: rgba(0,0,0,0.9);
   text-transform: capitalize;
-  //background: black;
+  @include phone {
+    font-size: 1.8rem;
+  }
+  p {
+      color: rgba(0,0,0,0.5); 
+      font-size: 1.2rem;
+  }
+  //background: rgba(0,0,0,0.05);
 }
 
 .bulletPoint {
@@ -165,7 +212,7 @@ body {
   }
 }
 
-#abizarNav > div:hover {
+#abizarNav > a:hover {
   color: #7A7A7A;
 }
 
@@ -187,7 +234,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.3rem;
   font-weight: 500;
   margin: 0 0 0 0;
   text-transform: capitalize;
@@ -200,7 +247,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0 0;
 }
@@ -209,7 +256,7 @@ h4 {
   box-sizing: border-box;
   padding-right: 4rem;
   float: left;
-  margin-top : 0.2rem;
+  margin-top : 0.5rem;
   width: 40%;
   text-align: right;
   @include phone {
@@ -338,7 +385,7 @@ h4 {
 
 .icon-list {
   display: flex;
-  > div {
+  > a {
     margin-right: 20px;
     font-size: 18px;
     color: rgba(0,0,0,0.7);
@@ -348,7 +395,7 @@ h4 {
       margin-right: 0;
     }
   }
-  > div:hover {
+  > a:hover {
     color: $hover-blue;
   }
 }
@@ -372,7 +419,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  .icon-list > div {
+  .icon-list > a {
     color: rgba(255,255,255,0.8);
     font-size: 14px;
     margin-right: 25px;
@@ -381,8 +428,11 @@ footer {
 
 .footerText {
   padding: 0 2rem;
-  font-size: 110%;
+  font-size: 100%;
   font-weight: 400;
+  &::selection {
+    background-color: rgba(255,255,255,0.2);
+  }
 }
 
 /* hamburgers from https://jonsuh.com/hamburgers/ */

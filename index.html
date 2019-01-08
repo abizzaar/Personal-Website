@@ -12,7 +12,7 @@
 
 <body>
     <div id="abizarNav" class="headingsFutura" >
-        <div onclick="location.href = 'index.html'">Abizar</div>
+        <a href='index.html'">Abizar</a>
         <!-- script to handle click at bottom of document -->
         <button onclick="toggleNav()" class="hamburger hamburger--emphatic" type="button">
           <span class="hamburger-box">
@@ -20,20 +20,22 @@
           </span>
         </button>
     </div>
+    
     <div id="fullNav" class="fullNav">
-        <div><a onclick="location.href = 'index.html'">Home</a></div>
-        <div><a onclick="location.href = 'ISO/iso.html'">ISO Athletic</a></div>
-        <div><a onclick="location.href = 'CocoHealth/cocohealth.html'">Coco Health</a></div>
-        <div><a onclick="location.href = 'Mynd/mynd.html'">Mynd</a></div>
-        <div><a onclick="location.href = 'VRAutism/vrautism.html'">Multisensory VR experience</a></div>
-        <div><a onclick="location.href = 'Personality/personality-types.html'">Personality Types</a></div>
-        <div><a onclick="location.href = 'Intuit/intuit.html'">Intuit + Northwestern</a></div>
-        <div><a onclick="location.href = 'IDEO/ideo.html'">IDEO Colab Makeathon</a></div>
+        <div><a href = 'index.html'>Home</a></div>
+        <div><a href = 'ISO/iso.html'>ISO Athletic</a></div>
+        <div><a href = 'CocoHealth/cocohealth.html'>Coco Health</a></div>
+        <div><a href = 'Mynd/mynd.html'>Mynd</a></div>
+        <div><a href = 'Intuit/intuit.html'>Intuit + Northwestern</a></div>
+        <div><a href = 'VRAutism/vrautism.html'>Multisensory VR experience</a></div>
     </div>
 
     <div class="outer-flex-home">
 <div class="flex-home">
-    <img src="Home/Media/abi.png" id="abizarCoverPhoto">
+  <div id="abizarCoverPhoto">
+      <img src="Home/Media/abi.png">
+  </div>
+    
       <div class="flex-home-p">
     <h1 id="titleDescrOfMe">
         <span class="greyUnderline">Abizar Bagasrawala</span>
@@ -48,34 +50,21 @@
       I'm a junior interested in front-end engineering and design. 
       I'm a junior interested in front-end engineering and design. 
       I'm a junior interested in front-end engineering and design. 
-      <!-- <span class="bpContainer"><span class="bulletPoint"></span> <span> My strengths lie in bringing
-          digital products to life, overseeing the research, design and development. I have experience
-          delivering functional products to real-world clients.<br></span></span>
-      <span class="bpContainer"><span class="bulletPoint"></span> <span>I am currently focusing
-        on becoming a better full-stack developer and product designer.<br></span></span>
-      <span class="bpContainer"><span class="bulletPoint"></span> <span>
-        In my free time I read, write and travel.
-        You can find my code on <a class="homePageLink yellowBackground" onclick="window.open('https://github.com/abizzaar')">Github</a>,
-        photography on <a class="homePageLink yellowBackground" onclick="window.open('https://www.behance.net/abizarbaga5b18')">Behance</a>, 
-        and professional journey on <a class="homePageLink yellowBackground" onclick="window.open('https://www.linkedin.com/in/abizar-bagasrawala-82774a11b/')">LinkedIn</a>. 
-      </span></span>   -->
-      
     </p>
 
-    <div class="icon-word m-1">
+    <a class="icon-word m-1" href="mailto:abizar@u.northwestern.edu">
       <div><i class="far fa-envelope"></i></div>
       <p>abizar@u.northwestern.edu</p>
-    </div>
-    <div class="icon-word">
+    </a>
+    <a class="icon-word" href="Home/Media/resume.pdf" target="_blank">
         <div><i class="far fa-file-alt"></i></div>
         <p>resume</p>
-    </div>
+    </a>
     <div class="icon-list m-2">
-      <div><i class="fab fa-github"></i></div>
-      <div><i class="fab fa-twitter"></i></div>
-      <div><i class="fab fa-linkedin-in"></i></div>
+      <a href="https://github.com/abizzaar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/abizzaar" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/abizar-b-82774a11b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
-    
     </div>
   </div>
 </div>
@@ -99,7 +88,7 @@
     <div class="ui three stackable link cards">
       <a class="fluid card" href='ISO/iso.html'>
         <div class="image"> 
-          <img src="Assets/mock-iso.jpg">
+          <img src="Assets/mock-iso-3.jpg">
         </div>
         <div class="content">
           <div class="header">ISO Athletic</div>
@@ -113,7 +102,7 @@
       </a>
       <a class="fluid card" href='CocoHealth/cocohealth.html'>
         <div class="image"> 
-          <img src="Assets/mock-coco-2.jpg">
+          <img src="Assets/mock-coco-3.jpg">
         </div>
         <div class="content">
           <div class="header">Coco Health</div>
@@ -127,7 +116,7 @@
       </a>
       <a class="fluid card" href='Mynd/mynd.html'>
         <div class="image">  
-          <img src="Assets/mock-mynd-2.jpg">
+          <img src="Assets/mock-mynd-3.jpg">
         </div>
         <div class="content">
           <div class="header">Mynd</div>
@@ -141,7 +130,7 @@
       </a>
       <a class="fluid card" href='Intuit/intuit.html'>
         <div class="image">
-          <img src="Assets/mock-intuit.jpg">
+          <img src="Assets/mock-intuit-2.jpg">
         </div>
         <div class="content">
           <div class="header">Intuit + Northwestern</div>
@@ -155,7 +144,7 @@
       </a>
       <a class="fluid card" href='VRAutism/vrautism.html'>
         <div class="image">  
-          <img src="Assets/mock-vr.png">
+          <img src="Assets/mock-vr-2.jpg">
         </div>
         <div class="content">
           <div class="header">Multisensory VR Autism</div>
@@ -197,13 +186,12 @@
   <footer>
     <div class="footerText">Designed and built by me</div>
     <div class="icon-list m-1">
-      <div><i class="far fa-file-alt"></i></div>
-      <div><i class="far fa-envelope"></i></div>
-      <div><i class="fab fa-github"></i></div>
-      <div><i class="fab fa-twitter"></i></div>
-      <div><i class="fab fa-linkedin-in"></i></div>
+      <a href="Home/Media/resume.pdf" target="_blank"><i class="far fa-file-alt"></i></a>
+      <a href="mailto:abizar@u.northwestern.edu"><i class="far fa-envelope"></i></a>
+      <a href="https://github.com/abizzaar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/abizzaar" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/abizar-b-82774a11b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </footer>
 
-   
 </body>

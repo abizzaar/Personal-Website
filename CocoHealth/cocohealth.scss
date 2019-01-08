@@ -1,13 +1,11 @@
 @import '../Assets/base';
 
-.underline {
-  margin-left: -0.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $purple), color-stop(0, white));
-  background-image: linear-gradient(to right, $purple 100%, white 0);;
-  background-position: 0 0.85em;
-  background-repeat: repeat-x;
+.underline:after {
+  background: $purple;
+}
+
+.strike:before {
+  background-color: $purple
 }
 
 a {

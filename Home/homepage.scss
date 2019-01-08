@@ -12,7 +12,7 @@
       margin-top: 0.3rem;
       font-size: 1rem !important;
       font-family: "Roboto", sans-serif;
-      color: rgba(0,0,0,0.3) !important;
+      color: rgba(0,0,0,0.4) !important;
     }
     .description {
       margin-top: 0.8rem !important;
@@ -27,7 +27,7 @@
 
 }
 
-.ui.two.cards {
+.ui.three.cards {
   @include phone {
     margin-right: -0.8em !important;
   }
@@ -59,7 +59,7 @@
   margin: auto;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 10rem;
   padding-bottom: 10rem;
   position: relative;
@@ -70,27 +70,37 @@
     margin-right: 3rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    flex-direction: column;    
+    flex-direction: column; 
   }
   @include phone {
+    align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
   }
  }
 
+
+
 #abizarCoverPhoto {
-    width: 18rem;
+    img {width: 14rem;}
     display: block;
     margin-right: 3rem;
     @include tablet {
       margin-bottom: 2rem;
       margin-right: 0;
     }
+    &:after {
+      content: '* illustrated by lekha v';
+      font-size: 0.7rem;
+      text-align: center;
+      display: block;
+      margin-top: 0.7rem;
+    }
 }
 
 
 .descrStudies {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
   letter-spacing: 0.09rem;
   line-height: 1.3rem;

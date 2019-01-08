@@ -1,13 +1,11 @@
 @import '../Assets/base.scss';
 
-.underline {
-  margin-left: -0.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $green), color-stop(0, white));
-  background-image: linear-gradient(to right, $green 100%, white 0);;
-  background-position: 0 0.85em;
-  background-repeat: repeat-x;
+.underline:after {
+  background: $green;
+} 
+
+.strike:before {
+  background: $green;
 }
 
 #finalDelivHeader {

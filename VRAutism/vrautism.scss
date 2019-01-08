@@ -6,6 +6,8 @@
   }
 }
 
+
+
 body {
     color: black;
 }
@@ -14,27 +16,23 @@ video, img {
   margin: 0;
 }
 
-.underline {
-  margin-left: -0.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $blue), color-stop(0, white));
-  background-image: linear-gradient(to right, $blue 100%, white 0);;
-  background-position: 0 0.8em;
-  background-repeat: repeat-x;
+.underline:after {
+  background: $blue;
+}
+
+.strike:before {
+  background: $blue;
 }
 
 h2 {
   color: black;
-}
-
-
-h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   @include phone {
     margin-bottom: 0;
   }
 }
+
+
 
 
 .yellowText {
@@ -232,7 +230,7 @@ h2 {
 }
 
 #ourPrototypeHeadingVR {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #ourPrototypeDiagramContainer {
@@ -298,11 +296,12 @@ h2 {
 .environmentHeadings {
     margin-top: -0.2em;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     word-wrap: break-word;
     margin-bottom: 0;
+    color: black;
 }
 
 .environmentQuestions {
@@ -419,9 +418,9 @@ h2 {
 
 .captionOfVideo {
     text-align: center;
-    padding-top: 0.5em;
+    padding-top: 1rem;
     color: #9A9A9A;
-    font-size: 0.95em;
+    font-size: 0.9rem;
 }
 
 #finalPresentationBlock {
