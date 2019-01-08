@@ -306,24 +306,77 @@ h4 {
   margin-top: -5rem;
 }
 
+// icons
+.icon-word {
+  display: flex;
+  align-items: center;
+  i {
+    width: 15px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: rgba(0,0,0,0.8);
+    transition: all 0.3s;
+  }
+
+  p {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+    margin-top: 0.1rem;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    i {color: $hover-blue;}
+    p {color: $hover-blue;}
+  }
+}
+
+.icon-list {
+  display: flex;
+  > div {
+    margin-right: 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+    transition: all 0.3s;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  > div:hover {
+    color: $hover-blue;
+  }
+}
 
 footer {
   margin-top: 8rem;
-  height: 8rem;
+  height: 7rem;
   width: 100%;
-  background-color: black;
-  background-image: url("footer.png");
+  background-color: rgba(0,0,0,0.9);
+  background-image: url(footer.png);
   background-position: left top;
   background-size: auto 100%;
   border-top: 1px solid rgba(0,0,0,.3);
   text-align: center;
   padding: 2rem 1rem;
   font-weight: 300;
-  color: rgba(255,255,255,.7);
-  font-size: 80%;
+  color: rgba(255,255,255,.8);
+  font-size: 75%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .icon-list > div {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    margin-right: 25px;
+  };
 }
 
 .footerText {
@@ -331,7 +384,6 @@ footer {
   font-size: 110%;
   font-weight: 400;
 }
-
 
 /* hamburgers from https://jonsuh.com/hamburgers/ */
 .hamburger {
