@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../Assets/general.min.css" />
+    <link rel="stylesheet" type="text/css" href="personality-types.min.css" />
+    <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1" />
+    <script src="../Assets/general.js"></script>
+  </head>
+
+<body>
+  <div id="abizarNav" class="headingsFutura" >
+    <div onclick="location.href = '../index.html'">Abizar</div>
+      <!-- script to handle click at bottom of document -->
+      <button onclick="toggleNav()" class="hamburger hamburger--emphatic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="fullNav" class="fullNav">
+        <div><a onclick="location.href = '../index.html'">Home</a></div>
+        <div><a onclick="location.href = '../ISO/iso.html'">ISO Athletic</a></div>
+        <div><a onclick="location.href = '../CocoHealth/cocohealth.html'">Coco Health</a></div>
+        <div><a onclick="location.href = '../Mynd/mynd.html'">Mynd</a></div>
+        <div><a onclick="location.href = '../VRAutism/vrautism.html'">Multisensory VR experience</a></div>
+        <div><a onclick="location.href = '../Personality/personality-types.html'">Personality Types</a></div>
+        <div><a onclick="location.href = '../Intuit/intuit.html'">Intuit + Northwestern</a></div>
+        <div><a onclick="location.href = '../IDEO/ideo.html'">IDEO Colab Makeathon</a></div>
+    </div>
+
+    <div class="pageHeading">personality types</div>
+    <div class="maxWidthContainer">
+    <div class="descrRowContainer">
+        <h2 class="descrProjectLeft">
+            <span class="redUnderline">Project Description</span>
+        </h2>
+
+        <div class="descrProjectRight">
+            <p>
+                In this project, I use machine learning to analyze the significance of 
+                Myers-Briggs personality types in determining the use of language.
+                It is a final project for the class “Machine Learning” at Northwestern
+                University.
+            </p>
+        </div>
+    </div>
+
+    <div class="descrRowContainer">
+        <h2 class="descrProjectLeft">
+            <span class="redUnderline">Goal</span>
+        </h2>
+
+        <div class="descrProjectRight">
+            <p>
+                My machine learning task was to predict the third dichotomy of
+                the MBTI personality type, “Thinking (T) — Feeling (F)”, given 
+                the comments of a user on an online forum.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="descrRowContainer">
+        <h2 class="descrProjectLeft">
+            <span class="redUnderline">Why it's important</span>
+        </h2>
+
+        <div class="descrProjectRight">
+            <p>
+                With the ever-increasing availability of user data on online forums and
+                social media platforms, there is great potential for platforms to learn more about 
+                the personality of users through comments and posts. These 
+                learnings can be used to better mediate discussion and provide more
+                meaningful content.
+            </p>
+        </div>
+    </div>
+
+    <div class="descrRowContainer">
+        <h2 class="lastDescrPers descrProjectLeft">
+            <span class="redUnderline">Approach</span>
+        </h2>
+
+        <div class="lastDescrPers descrProjectRight">
+            <p>
+                I downloaded a dataset from Kaggle containing 8600 examples (rows) in which each 
+                row represents a user, containing entries of personality type and their 50 most recent
+                comments on an online forum called PersonalityCafe.com. I used 
+                <a class="hyperlinkPers"
+                    href="https://github.com/abizzaar/personality-types/blob/master/preprocessing.py" 
+                    target="_blank">
+                    Python code</a> 
+                to clean and vectorize the 
+                text file using a bag-of-words and tf-idf approach, using packages such as Pandas, re, NLTK, and SciKit. 
+                I then trained the model using pre-implemented Logistic Regression and Naive Bayes algorithms, and performed 
+                feature selection based on correlation and information gain, all in the Weka software.
+            </p>
+        </div>
+    </div>
+
+    <div id="resultsContainer" class="separationLine">
+        <h2 id="resultsHeading">
+            <span class="redUnderline">Results</span>
+        </h2>
+    
+        <p id="paragraphResultsOne">
+            The trained model can predict whether a user has personality dichotomy “Thinking” or “Feeling” with 75.53% 
+            accuracy using Logistic Regression and 70.70% accuracy using Naive Bayes. 
+            These are great accuracies considering that the baseline prediction rate calculated using ZeroR is 54.11%.
+        </p>
+        <img id="imgTraining" src="Media/training.png">
+        <p id="paragraphResultsTwo">
+            The primary insights of the research are the frequency of words found for the words ranked highly in feature selection. 
+            In the two tables below you can see the words that are strong predictors for the “Feeling” and “Thinking” dichotomies 
+            respectively. It is amazing to see that the following words, which are less explicitly related to the “feeling” 
+            dichotomy but still related to it, are predictors of the dichotomy: love, beautiful, really, heart, thank, hope, haha
+            and song. You can find the 
+            <a class="hyperlinkPers"
+                    href="Media/report.pdf" 
+                    target="_blank">
+                    complete report here</a>.
+        </p>
+
+        <div class="halfSizeMediaContainer">
+          <img class="halfSizeMedia" id="imgFeeling" src="Media/feeling.png">
+          <img class="halfSizeMedia" id="imgThinking" src="Media/thinking.png">
+        </div>
+        
+
+        
+    </div>
+
+    
+    <div class="descrRowContainer separationLine">
+        <h2 class="descrProjectLeft">
+            <span class="redUnderline">Future Work</span>
+        </h2>
+
+        <div class="descrProjectRight">
+            <p>
+                There needs to be more data collection efforts that bring together language and personality types, as 
+                larger datasets would accommodate more nuanced analyses of language for all dichotomies. This could be 
+                done through social media and discussion platforms. 
+            </p>
+        </div>
+    </div>
+
+    <div class="descrRowContainer">
+        <h2 class="lastDescrPers descrProjectLeft">
+            <span class="redUnderline">What I learned</span>
+        </h2>
+
+        <div class="lastDescrPers descrProjectRight">
+            <p>
+                The project helped me develop a strong grasp on implementing Python code and libraries for text analysis. 
+                It also taught me how to evaluate different machine learning techniques and select the right one for any task. 
+                Going forward, I am excited to learn about more advanced algorithms such as neural networks and use my knowledge 
+                to design new technology that can enhance the human experience in any way possible.
+            </p>
+        </div>
+    </div>
+    </div>
+    
+    <footer>
+      <div class="footerLine"></div>
+      <div class="footerText">Designed and built by Abizar</div>
+      <div class="footerLine"></div>
+    </footer>
+
+</body>
+
+</html>
