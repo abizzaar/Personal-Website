@@ -48,9 +48,7 @@
  */
 
  .outer-flex-home {
-
-
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,0,0.84);
 
  }
 
@@ -93,13 +91,15 @@
 
 
 .descrStudies {
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 0.9rem;
-  letter-spacing: 0.09rem;
+  color: rgba(255,255,255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.11rem;
   line-height: 1.5rem;
+  font-weight: 500;
 }
 
 #descrOfMe {
+  color: rgba(255,255,255,0.6);
   .bpContainer {
     margin-top: 1rem;
   }
@@ -160,10 +160,21 @@ a {
     background-repeat: repeat-x;
 }
 
+#titleDescrOfMe {
+  color: rgba(255,255,255,0.9);
+}
 
+.home-section {
+  padding-bottom: 5rem;
+}
 
-#myWorkTitle {
-    margin-bottom: 1rem;
+.h-s-g {
+  background: rgba(0,0,0,.05);
+}
+
+.myWorkTitle {
+    margin-bottom: 1.2rem;
+    padding-top: 4rem;
     @media (max-width: 768px) {
       margin-bottom: 2rem;
     }
