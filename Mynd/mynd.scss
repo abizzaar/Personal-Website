@@ -230,6 +230,7 @@ body {
 
 .videoAndDescrMyndContainer {
   margin-top: 8rem;
+  margin-bottom: 5rem;
   @include phone {flex-direction: column-reverse;}
 }
 #videoAndDescrMynd1 {
