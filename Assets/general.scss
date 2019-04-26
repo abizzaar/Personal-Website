@@ -5,6 +5,14 @@ em {
   font-style: italic;
 }
 
+.ui.card, .ui.cards>.card {
+  box-shadow: 0 8px 6px 3px rgba(0,0,0,0.03), 0 0px 10px 1px rgba(0,0,0,0.05) !important;
+}
+
+.ui.cards a.card:hover, .ui.link.card:hover, .ui.link.cards .card:hover, a.ui.card:hover {
+  box-shadow: 0 40px 20px 4px rgba(0,0,0,0.04), 0 0px 10px 1px rgba(0,0,0,0.1) !important;
+}
+
 a {
   color: inherit;
 }
