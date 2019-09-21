@@ -48,8 +48,7 @@
  */
 
  .outer-flex-home {
-  background: rgba(0,0,0,0.87);
-
+  // background: rgba(150, 195, 255,0.8);
  }
 
  .flex-home {
@@ -91,7 +90,7 @@
 
 
 .descrStudies {
-  color: rgba(255,255,255, 0.6);
+  color: rgba(0,0,0, 0.6);
   font-size: 0.8rem;
   letter-spacing: 0.11rem;
   line-height: 1.5rem;
@@ -99,10 +98,11 @@
 }
 
 #descrOfMe {
-  color: rgba(255,255,255,0.6);
+  color: rgba(0,0,0,0.8);
   .bpContainer {
     margin-top: 1rem;
   }
+  margin-bottom: 0.7rem;
 }
 
 
@@ -160,8 +160,42 @@ a {
     background-repeat: repeat-x;
 }
 
+#titleDescrOfMe > span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgba(0,0,0,0.9);
+  font-family: "Playfair Display", serif !important;
+}
+
+#resumeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  color: white;
+  box-shadow: -1px 3px 2px #DBDBDB;
+  background: #0155C6;
+  height: 2.7rem;
+  width: 10rem;
+  font-weight: 400;
+  font-size: 1rem;
+
+  &:hover {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background: #1a6bd9;
+  }
+}
+
+button:focus {
+  outline: 1px solid rgba(138,57,255,0.2);
+}
+
 #titleDescrOfMe {
-  color: rgba(255,255,255,0.9);
+  margin-bottom: 0.2rem;
 }
 
 .home-section {
