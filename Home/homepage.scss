@@ -2,18 +2,20 @@
 
 .card {
   .content {
-    
+
     .header {
       font-size: 1.1rem !important;
       font-family: "Roboto" !important;
       font-weight: 500 !important;
     }
+
     .meta {
       margin-top: 0.3rem;
       font-size: 1rem !important;
       font-family: "Roboto", sans-serif;
-      color: rgba(0,0,0,0.4) !important;
+      color: rgba(0, 0, 0, 0.4) !important;
     }
+
     .description {
       margin-top: 0.8rem !important;
       font-size: 80%;
@@ -23,7 +25,6 @@
     }
   }
 
-  
 
 }
 
@@ -33,11 +34,76 @@
   }
 }
 
+#homeNewBannerContainer {
+  background-color: black;
 
 
+  a {
+    text-decoration: underline;
+  }
+}
+
+#homeNewBannerText {
+  padding: 4rem 16rem 4rem 2rem;
+  line-height: 1.7;
+  background-color: #1c1f25;
+  color: #f3f3f3;
+  font-weight: 400;
+  font-size: 140%;
+
+  @include tablet {
+    padding: 4rem 6rem 4rem 2rem;
+    font-size: 120%;
+  }
+
+  @include phone {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+}
+
+@keyframes scrolling-text-left {
+  from { left: 0 }
+  to { left: -2500px }
+}
+
+@keyframes scrolling-text-right {
+  from { right: 0 }
+  to { right: -2500px }
+}
+
+.homeNewBannerEmojisContainer {
+  letter-spacing: 0.6rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  height: 52px;
+}
+
+.homeNewBannerEmojis {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 24px;
+  right: 100vw;
+}
+
+.scrolling-text {
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scrolling-text-left {
+  animation-name: scrolling-text-left;
+}
+
+.scrolling-text-right {
+  animation-name: scrolling-text-right;
+}
 
 
-/* 
+/*
 .greyUnderline {
   padding-right: 0.2em;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #F0F0F0), color-stop(0, white));
@@ -47,11 +113,11 @@
 }
  */
 
- .outer-flex-home {
+.outer-flex-home {
   // background: rgba(150, 195, 255,0.8);
- }
+}
 
- .flex-home {
+.flex-home {
   max-width: 970px; // if want larger, make 970px
   margin: auto;
   display: flex;
@@ -67,7 +133,7 @@
     margin-right: 3rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    flex-direction: column; 
+    flex-direction: column;
   }
   @include phone {
     align-items: center;
@@ -76,23 +142,25 @@
     padding-top: 2rem;
     padding-bottom: 4rem;
   }
- }
-
+}
 
 
 #abizarCoverPhoto {
-    img {width: 14rem;}
-    display: block;
-    margin-right: 3rem;
-    @include tablet {
-      margin-bottom: 2rem;
-      margin-right: 0;
-    }
+  img {
+    width: 14rem;
+  }
+
+  display: block;
+  margin-right: 3rem;
+  @include tablet {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
 }
 
 
 .descrStudies {
-  color: rgba(0,0,0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 0.8rem;
   letter-spacing: 0.13rem;
   line-height: 1.5rem;
@@ -100,16 +168,19 @@
 }
 
 #descrOfMe {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
+
   .bpContainer {
     margin-top: 1rem;
   }
+
   margin-bottom: 0.7rem;
 }
 
 
 .homePageLink {
   transition: all .2s ease-in;
+
   &:hover {
     background-color: #F0F0F0;
   }
@@ -140,32 +211,32 @@ a {
 
 
 .email {
-    margin-top: 5rem;
-    text-align: right;
+  margin-top: 5rem;
+  text-align: right;
 }
 
 #emailAbizar {
-    color: #535a5f;
-    text-decoration: none;
+  color: #535a5f;
+  text-decoration: none;
 }
 
 .resume {
   margin-top: 0.5rem;
-    text-align: right;
+  text-align: right;
 }
 
 .homePageUnderline {
-    cursor: pointer;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
-    background-image: linear-gradient(to right, black 100%, white 0);;
-    background-position: 0 20px;
-    background-repeat: repeat-x;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, black), color-stop(0, white));
+  background-image: linear-gradient(to right, black 100%, white 0);;
+  background-position: 0 20px;
+  background-repeat: repeat-x;
 }
 
 #titleDescrOfMe > span {
   font-size: 1.8rem;
   font-weight: 700;
-  color: rgba(0,0,0,0.9);
+  color: rgba(0, 0, 0, 0.9);
   font-family: "Playfair Display", serif !important;
 }
 
@@ -185,15 +256,15 @@ a {
   font-size: 1rem;
 
   &:hover {
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     background: #1a6bd9;
   }
 }
 
 button:focus {
-  outline: 1px solid rgba(138,57,255,0.2);
+  outline: 1px solid rgba(138, 57, 255, 0.2);
 }
 
 #titleDescrOfMe {
@@ -205,15 +276,15 @@ button:focus {
 }
 
 .h-s-g {
-  background: rgba(0,0,0,.05);
+  background: rgba(0, 0, 0, .05);
 }
 
 .myWorkTitle {
-    margin-bottom: 1.2rem;
-    padding-top: 4rem;
-    @media (max-width: 768px) {
-      margin-bottom: 2rem;
-    }
+  margin-bottom: 1.2rem;
+  padding-top: 4rem;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .myWorkDescr {
@@ -222,25 +293,26 @@ button:focus {
   transition: all .4s ease-in;
   cursor: pointer;
 
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem 1rem 1rem 1rem;
 
   .bulletPoint {
     display: none;
   }
-  
+
 }
+
 .bulletPoint {
   display: none;
 }
 
 .myWorkDescr:hover {
   @for $i from 1 through length($projects-list) {
-    &:nth-child(#{$i})  {
-        background-color: nth($projects-list, $i);
-        opacity: 1;
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
-      }
+    &:nth-child(#{$i}) {
+      background-color: nth($projects-list, $i);
+      opacity: 1;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
@@ -257,41 +329,42 @@ button:focus {
 }
 
 #personalMediaIcons {
-    margin-top: 0.7rem;
-    text-align: right;
-    vertical-align: baseline;
+  margin-top: 0.7rem;
+  text-align: right;
+  vertical-align: baseline;
 }
 
 #linkedInText {
-    font-size: 1em;
-    font-family: 'Myriad Pro';
-    font-weight: bold;
-    opacity: 0.5;
-    cursor:pointer;
+  font-size: 1em;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 
 #githubIcon {
-    margin-left: 0.8rem;
-    height: 1em;
-    vertical-align: -0.15em;
-    opacity: 0.6;
-    cursor:pointer;
+  margin-left: 0.8rem;
+  height: 1em;
+  vertical-align: -0.15em;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 #githubIcon, #behanceIcon, #twitterIcon, #linkedInText {
-    transition: all .4s ease-in;
-    &:hover {
-      opacity: 1;
-    }
+  transition: all .4s ease-in;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 #behanceIcon {
-    margin-left: 0.8rem;
-    height: 1em;
-    vertical-align: -0.15em;
-    opacity: 0.6;
-    cursor:pointer;
+  margin-left: 0.8rem;
+  height: 1em;
+  vertical-align: -0.15em;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 #twitterIcon {
@@ -299,7 +372,7 @@ button:focus {
   vertical-align: -0.34em;
   height: 1.4em;
   margin-left: 0.6rem;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 
@@ -308,7 +381,7 @@ button:focus {
 }
 
 @include phone {
-  
+
 
   .email, .resume, #personalMediaIcons, #keepCheckingBack {
     text-align: left;
